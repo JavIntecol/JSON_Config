@@ -29,19 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.krypton = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
-            // kryptonPalette1
+            // krypton
             // 
-            this.kryptonPalette1.BasePaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
+            this.krypton.BasePaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(85, 193);
+            this.kryptonButton1.Location = new System.Drawing.Point(186, 179);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(502, 71);
+            this.kryptonButton1.Palette = this.krypton;
+            this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.Text = "kryptonButton1";
             // 
@@ -52,6 +54,9 @@
             this.ClientSize = new System.Drawing.Size(1517, 765);
             this.Controls.Add(this.kryptonButton1);
             this.Name = "Form1";
+            this.Palette = this.krypton;
+            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -60,7 +65,7 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
+        private ComponentFactory.Krypton.Toolkit.KryptonPalette krypton;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }
