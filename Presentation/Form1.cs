@@ -5,10 +5,12 @@ namespace Presentation
 {
     public partial class Form1 : KryptonForm
     {
+
         public Form1()
         {
             InitializeComponent();
             CustomizeDesing();
+
 
             CmbBx_Cameras.Items.Add(1);
             CmbBx_Cameras.Items.Add(2);
@@ -91,11 +93,23 @@ namespace Presentation
         private void Btn_Cameras_Click(object sender, EventArgs e)
         {
             ShowSubPanel(PanelCameras);
-            
+
         }
 
         private void CmbBx_Cameras_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.PanelNumCameras.Controls.Clear();
+
+
+            int indiceCameras = CmbBx_Cameras.SelectedIndex;
+            int num_cameras = indiceCameras + 1;
+
+            for (int camera = num_cameras; camera >= 1; camera--)
+            {
+                AddBotton(PanelNumCameras, "Camera", camera);
+            }
+
+
             HideSubPanel();
         }
 
@@ -106,6 +120,17 @@ namespace Presentation
 
         private void CmbBx_StageAxes_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.PanelNumStageAxes.Controls.Clear();
+
+
+            int indiceStageAxes = CmbBx_StageAxes.SelectedIndex;
+            int num_StageAxes = indiceStageAxes + 1;
+
+            for (int StageAxis = num_StageAxes; StageAxis >= 1; StageAxis--)
+            {
+                AddBotton(PanelNumStageAxes, "StageAxis", StageAxis);
+            }
+
             HideSubPanel();
         }
 
@@ -116,6 +141,17 @@ namespace Presentation
 
         private void CmbBx_ObjectiveLenses_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.PanelNumObjectiveLenses.Controls.Clear();
+
+
+            int indiceLenses = CmbBx_ObjectiveLenses.SelectedIndex;
+            int num_ObjectiveLenses = indiceLenses + 1;
+
+            for (int ObjectiveLens = num_ObjectiveLenses; ObjectiveLens >= 1; ObjectiveLens--)
+            {
+                AddBotton(PanelNumObjectiveLenses, "ObjectiveLens", ObjectiveLens);
+            }
+
             HideSubPanel();
         }
 
@@ -126,6 +162,17 @@ namespace Presentation
 
         private void CmbBx_LightSheets_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.PanelNumLightSheets.Controls.Clear();
+
+
+            int indiceLightSheets = CmbBx_LightSheets.SelectedIndex;
+            int num_LightSheets = indiceLightSheets + 1;
+
+            for (int LightSheet = num_LightSheets; LightSheet >= 1; LightSheet--)
+            {
+                AddBotton(PanelNumLightSheets, "LightSheet", LightSheet);
+            }
+
             HideSubPanel();
         }
 
@@ -136,6 +183,17 @@ namespace Presentation
 
         private void CmbBx_Lasers_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.PanelNumLasers.Controls.Clear();
+
+
+            int indiceLasers = CmbBx_Lasers.SelectedIndex;
+            int num_Lasers = indiceLasers + 1;
+
+            for (int Laser = num_Lasers; Laser >= 1; Laser--)
+            {
+                AddBotton(PanelNumLasers, "Laser", Laser);
+            }
+
             HideSubPanel();
         }
 
@@ -146,12 +204,46 @@ namespace Presentation
 
         private void CmbBx_FilterWheels_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.PanelNumFilterWheels.Controls.Clear();
+
+
+            int indiceFilterWheels = CmbBx_FilterWheels.SelectedIndex;
+            int num_FilterWheels = indiceFilterWheels + 1;
+
+            for (int FilterWheel = num_FilterWheels; FilterWheel >= 1; FilterWheel--)
+            {
+                AddBotton(PanelNumFilterWheels, "FilterWheel", FilterWheel);
+            }
+
             HideSubPanel();
         }
 
         private void Btn_Summary_Click(object sender, EventArgs e)
         {
             HideSubPanel();
+        }
+
+        private void AddBotton(KryptonPanel ItemPanel, String Item, int numButtons)
+        {
+            KryptonButton oBotton = new KryptonButton();
+
+            oBotton.Name = "Btn_" + Item + "_" + numButtons.ToString();
+            oBotton.Text = Item + " " + numButtons.ToString();
+            oBotton.Palette = krypton;
+            oBotton.Dock = System.Windows.Forms.DockStyle.Top;
+
+            if (numButtons > 1)
+            {
+                oBotton.Enabled = false;
+            }
+
+            ItemPanel.Controls.Add(oBotton);
+
+        }
+
+        private void handlerComun_Click(object sender, EventArgs e)
+        {
+            Console.Beep(((KryptonButton)sender).Location.Y * 10, 100);
         }
     }
 }
