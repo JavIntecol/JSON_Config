@@ -1,5 +1,7 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using Presentation.Views;
 using System;
+using System.Windows.Forms;
 
 namespace Presentation
 {
@@ -100,6 +102,7 @@ namespace Presentation
         {
             this.PanelNumCameras.Controls.Clear();
 
+            Lbl_NumCameras.Enabled = true;                      
 
             int indiceCameras = CmbBx_Cameras.SelectedIndex;
             int num_cameras = indiceCameras + 1;
@@ -109,6 +112,9 @@ namespace Presentation
                 AddBotton(PanelNumCameras, "Camera", camera);
             }
 
+            AddTab(PanelNumCameras, "Cameras");
+
+            //openChildForm(new FormCamera(), sender);
 
             HideSubPanel();
         }
@@ -122,6 +128,7 @@ namespace Presentation
         {
             this.PanelNumStageAxes.Controls.Clear();
 
+            Lbl_NumStageAxes.Enabled = true;
 
             int indiceStageAxes = CmbBx_StageAxes.SelectedIndex;
             int num_StageAxes = indiceStageAxes + 1;
@@ -130,6 +137,8 @@ namespace Presentation
             {
                 AddBotton(PanelNumStageAxes, "StageAxis", StageAxis);
             }
+
+            AddTab(PanelNumStageAxes, "StageAxis");
 
             HideSubPanel();
         }
@@ -143,6 +152,7 @@ namespace Presentation
         {
             this.PanelNumObjectiveLenses.Controls.Clear();
 
+            Lbl_NumObjectiveLenses.Enabled = true;
 
             int indiceLenses = CmbBx_ObjectiveLenses.SelectedIndex;
             int num_ObjectiveLenses = indiceLenses + 1;
@@ -151,6 +161,8 @@ namespace Presentation
             {
                 AddBotton(PanelNumObjectiveLenses, "ObjectiveLens", ObjectiveLens);
             }
+
+            AddTab(PanelNumObjectiveLenses, "ObjectiveLens");
 
             HideSubPanel();
         }
@@ -164,6 +176,7 @@ namespace Presentation
         {
             this.PanelNumLightSheets.Controls.Clear();
 
+            Lbl_NumLightSheets.Enabled = true;
 
             int indiceLightSheets = CmbBx_LightSheets.SelectedIndex;
             int num_LightSheets = indiceLightSheets + 1;
@@ -172,6 +185,8 @@ namespace Presentation
             {
                 AddBotton(PanelNumLightSheets, "LightSheet", LightSheet);
             }
+
+            AddTab(PanelNumLightSheets, "LightSheet");
 
             HideSubPanel();
         }
@@ -185,6 +200,7 @@ namespace Presentation
         {
             this.PanelNumLasers.Controls.Clear();
 
+            Lbl_NumLasers.Enabled = true;
 
             int indiceLasers = CmbBx_Lasers.SelectedIndex;
             int num_Lasers = indiceLasers + 1;
@@ -193,6 +209,8 @@ namespace Presentation
             {
                 AddBotton(PanelNumLasers, "Laser", Laser);
             }
+
+            AddTab(PanelNumLasers, "Laser");
 
             HideSubPanel();
         }
@@ -206,6 +224,7 @@ namespace Presentation
         {
             this.PanelNumFilterWheels.Controls.Clear();
 
+            Lbl_NumFilterWheels.Enabled = true;
 
             int indiceFilterWheels = CmbBx_FilterWheels.SelectedIndex;
             int num_FilterWheels = indiceFilterWheels + 1;
@@ -215,6 +234,8 @@ namespace Presentation
                 AddBotton(PanelNumFilterWheels, "FilterWheel", FilterWheel);
             }
 
+            AddTab(PanelNumFilterWheels, "FilterWheel");
+
             HideSubPanel();
         }
 
@@ -223,7 +244,20 @@ namespace Presentation
             HideSubPanel();
         }
 
-        private void AddBotton(KryptonPanel ItemPanel, String Item, int numButtons)
+
+        private void AddTab(KryptonPanel ItemPanel, String Item)
+        {
+            KryptonPanel tab = new KryptonPanel();
+
+            tab.Name = "Tab_" + Item;            
+            tab.Palette = krypton;
+            tab.Dock = System.Windows.Forms.DockStyle.Left;
+            tab.Width = 20;
+
+            ItemPanel.Controls.Add(tab);
+        }
+
+        public void AddBotton(KryptonPanel ItemPanel, String Item, int numButtons)
         {
             KryptonButton oBotton = new KryptonButton();
 
@@ -231,19 +265,203 @@ namespace Presentation
             oBotton.Text = Item + " " + numButtons.ToString();
             oBotton.Palette = krypton;
             oBotton.Dock = System.Windows.Forms.DockStyle.Top;
+         
 
-            if (numButtons > 1)
-            {
-                oBotton.Enabled = false;
-            }
+            //if (numButtons > 1)
+            //{
+            //    oBotton.Enabled = false;
+            //}
+
+            if(Item == "Camera")
+                oBotton.Click += new EventHandler(handlerCameras_Click);
+
+            if(Item== "StageAxis")
+                oBotton.Click += new EventHandler(handlerStageAxes_Click);
+
+            if (Item == "ObjectiveLens")
+                oBotton.Click += new EventHandler(handlerObjectiveLenses_Click);
+
+            if (Item == "LightSheet")
+                oBotton.Click += new EventHandler(handlerLightSheets_Click);
+
+            if (Item == "Laser")
+                oBotton.Click += new EventHandler(handlerLasers_Click);
+
+            if (Item == "FilterWheel")
+                oBotton.Click += new EventHandler(handlerFilterWheels_Click);
 
             ItemPanel.Controls.Add(oBotton);
 
         }
 
-        private void handlerComun_Click(object sender, EventArgs e)
+        #region HandlersPrincipales
+
+        private void handlerCameras_Click(object sender, EventArgs e)
         {
-            Console.Beep(((KryptonButton)sender).Location.Y * 10, 100);
+            openChildForm(new FormCamera(), sender);
+
+            //Camera newCamera = new Camera();      
+
+            //PanelViews.Controls.Add(newCamera);
+        }
+
+        private Form FormStageAxis_1 = null;
+        private Form FormStageAxis_2 = null;
+        private Form FormStageAxis_3 = null;
+        private Form FormStageAxis_4 = null;
+        private void handlerStageAxes_Click(object sender, EventArgs e)
+        {
+            KryptonButton repBtnStageAxes = sender as KryptonButton;
+            string IdBtnStageAxes = repBtnStageAxes.Text;
+
+            if (IdBtnStageAxes == "StageAxis 1")
+            {
+                if(FormStageAxis_1==null)
+                {
+                    FormStageAxis_1 = new FormStageAxes(IdBtnStageAxes);
+                    openChildForm(FormStageAxis_1, sender);
+                }
+                else
+                {
+                    openChildForm(FormStageAxis_1, sender);
+                }
+            }
+
+            if (IdBtnStageAxes == "StageAxis 2")
+            {
+                if (FormStageAxis_2 == null)
+                {
+                    FormStageAxis_2 = new FormStageAxes(IdBtnStageAxes);
+                    openChildForm(FormStageAxis_2, sender);
+                }
+                else
+                {
+                    openChildForm(FormStageAxis_2, sender);
+                }
+            }
+
+            if (IdBtnStageAxes == "StageAxis 3")
+            {
+                if (FormStageAxis_3 == null)
+                {
+                    FormStageAxis_3 = new FormStageAxes(IdBtnStageAxes);
+                    openChildForm(FormStageAxis_3, sender);
+                }
+                else
+                {
+                    openChildForm(FormStageAxis_3, sender);
+                }
+            }
+
+            if (IdBtnStageAxes == "StageAxis 4")
+            {
+                if (FormStageAxis_4 == null)
+                {
+                    FormStageAxis_4 = new FormStageAxes(IdBtnStageAxes);
+                    openChildForm(FormStageAxis_4, sender);
+                }
+                else
+                {
+                    openChildForm(FormStageAxis_4, sender);
+                }
+            }
+
+        }
+
+        private Form FormObjectiveLens_1 = null;
+        private Form FormObjectiveLens_2 = null;
+        private Form FormObjectiveLens_3 = null;
+        private Form FormObjectiveLens_4 = null;
+        private void handlerObjectiveLenses_Click(object sender, EventArgs e)
+        {
+            KryptonButton repBtnObjectiveLens = sender as KryptonButton;
+            string IdBtnObjectiveLens = repBtnObjectiveLens.Text;
+
+            if (IdBtnObjectiveLens == "ObjectiveLens 1")
+            {
+                if (FormObjectiveLens_1 == null)
+                {
+                    FormObjectiveLens_1 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    openChildForm(FormObjectiveLens_1, sender);
+                }
+                else
+                {
+                    openChildForm(FormObjectiveLens_1, sender);
+                }
+            }
+
+            if (IdBtnObjectiveLens == "ObjectiveLens 2")
+            {
+                if (FormObjectiveLens_2 == null)
+                {
+                    FormObjectiveLens_2 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    openChildForm(FormObjectiveLens_2, sender);
+                }
+                else
+                {
+                    openChildForm(FormObjectiveLens_2, sender);
+                }
+            }
+
+            if (IdBtnObjectiveLens == "ObjectiveLens 3")
+            {
+                if (FormObjectiveLens_3 == null)
+                {
+                    FormObjectiveLens_3 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    openChildForm(FormObjectiveLens_3, sender);
+                }
+                else
+                {
+                    openChildForm(FormObjectiveLens_3, sender);
+                }
+            }
+
+            if (IdBtnObjectiveLens == "ObjectiveLens 4")
+            {
+                if (FormObjectiveLens_4 == null)
+                {
+                    FormObjectiveLens_4 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    openChildForm(FormObjectiveLens_4, sender);
+                }
+                else
+                {
+                    openChildForm(FormObjectiveLens_4, sender);
+                }
+            }
+        }
+
+        private void handlerLightSheets_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormCamera(), sender);
+        }
+
+        private void handlerLasers_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormCamera(), sender);
+        }
+
+        private void handlerFilterWheels_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormCamera(), sender);
+        }
+
+        #endregion
+
+        //private Form activeForm = null;
+        private void openChildForm(Form childForm, object sender)
+        {
+            AddOwnedForm(childForm);
+
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            PanelViews.Controls.Add(childForm);
+            PanelViews.Tag = childForm;
+            childForm.BringToFront();
+
+            childForm.Show();
+
+
         }
     }
 }
