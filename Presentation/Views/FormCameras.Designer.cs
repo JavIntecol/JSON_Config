@@ -1,6 +1,6 @@
 ﻿namespace Presentation.Views
 {
-    partial class FormCamera
+    partial class FormCameras
     {
         /// <summary>
         /// Required designer variable.
@@ -96,13 +96,13 @@
             this.PanelControlCamera.Name = "PanelControlCamera";
             this.PanelControlCamera.Palette = this.krypton;
             this.PanelControlCamera.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelControlCamera.Size = new System.Drawing.Size(946, 554);
+            this.PanelControlCamera.Size = new System.Drawing.Size(946, 636);
             this.PanelControlCamera.TabIndex = 1;
             // 
             // Btn_NextCamera
             // 
             this.Btn_NextCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_NextCamera.Location = new System.Drawing.Point(778, 465);
+            this.Btn_NextCamera.Location = new System.Drawing.Point(778, 547);
             this.Btn_NextCamera.Name = "Btn_NextCamera";
             this.Btn_NextCamera.Palette = this.krypton;
             this.Btn_NextCamera.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -112,8 +112,9 @@
             // 
             // kryptonTextBox10
             // 
-            this.kryptonTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.kryptonTextBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonTextBox10.Location = new System.Drawing.Point(371, 493);
             this.kryptonTextBox10.Name = "kryptonTextBox10";
             this.kryptonTextBox10.Palette = this.krypton;
@@ -123,8 +124,9 @@
             // 
             // TxtBx_BitsPerPixelCamera
             // 
-            this.TxtBx_BitsPerPixelCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_BitsPerPixelCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_BitsPerPixelCamera.Location = new System.Drawing.Point(371, 460);
             this.TxtBx_BitsPerPixelCamera.Name = "TxtBx_BitsPerPixelCamera";
             this.TxtBx_BitsPerPixelCamera.Palette = this.krypton;
@@ -134,8 +136,9 @@
             // 
             // TxtBx_PixelSpacingVerticalCamera
             // 
-            this.TxtBx_PixelSpacingVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_PixelSpacingVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_PixelSpacingVerticalCamera.Location = new System.Drawing.Point(371, 427);
             this.TxtBx_PixelSpacingVerticalCamera.Name = "TxtBx_PixelSpacingVerticalCamera";
             this.TxtBx_PixelSpacingVerticalCamera.Palette = this.krypton;
@@ -145,8 +148,9 @@
             // 
             // TxtBx_PixelSpacingHorizontalCamera
             // 
-            this.TxtBx_PixelSpacingHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_PixelSpacingHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_PixelSpacingHorizontalCamera.Location = new System.Drawing.Point(371, 394);
             this.TxtBx_PixelSpacingHorizontalCamera.Name = "TxtBx_PixelSpacingHorizontalCamera";
             this.TxtBx_PixelSpacingHorizontalCamera.Palette = this.krypton;
@@ -156,8 +160,9 @@
             // 
             // TxtBx_FPSMaxCamera
             // 
-            this.TxtBx_FPSMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_FPSMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_FPSMaxCamera.Location = new System.Drawing.Point(371, 361);
             this.TxtBx_FPSMaxCamera.Name = "TxtBx_FPSMaxCamera";
             this.TxtBx_FPSMaxCamera.Palette = this.krypton;
@@ -167,8 +172,9 @@
             // 
             // TxtBx_PixelsVerticalCamera
             // 
-            this.TxtBx_PixelsVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_PixelsVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_PixelsVerticalCamera.Location = new System.Drawing.Point(371, 328);
             this.TxtBx_PixelsVerticalCamera.Name = "TxtBx_PixelsVerticalCamera";
             this.TxtBx_PixelsVerticalCamera.Palette = this.krypton;
@@ -178,8 +184,9 @@
             // 
             // TxtBx_PixelsHorizontalCamera
             // 
-            this.TxtBx_PixelsHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_PixelsHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_PixelsHorizontalCamera.Location = new System.Drawing.Point(371, 295);
             this.TxtBx_PixelsHorizontalCamera.Name = "TxtBx_PixelsHorizontalCamera";
             this.TxtBx_PixelsHorizontalCamera.Palette = this.krypton;
@@ -189,8 +196,9 @@
             // 
             // TxtBx_ShutterMinCamera
             // 
-            this.TxtBx_ShutterMinCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_ShutterMinCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_ShutterMinCamera.Location = new System.Drawing.Point(371, 262);
             this.TxtBx_ShutterMinCamera.Name = "TxtBx_ShutterMinCamera";
             this.TxtBx_ShutterMinCamera.Palette = this.krypton;
@@ -200,8 +208,9 @@
             // 
             // TxtBx_ShutterMaxCamera
             // 
-            this.TxtBx_ShutterMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_ShutterMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_ShutterMaxCamera.Location = new System.Drawing.Point(371, 229);
             this.TxtBx_ShutterMaxCamera.Name = "TxtBx_ShutterMaxCamera";
             this.TxtBx_ShutterMaxCamera.Palette = this.krypton;
@@ -211,8 +220,9 @@
             // 
             // TxtBx_TypeCamera
             // 
-            this.TxtBx_TypeCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_TypeCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_TypeCamera.Location = new System.Drawing.Point(371, 196);
             this.TxtBx_TypeCamera.Name = "TxtBx_TypeCamera";
             this.TxtBx_TypeCamera.Palette = this.krypton;
@@ -222,8 +232,9 @@
             // 
             // TxtBx_NameCamera
             // 
-            this.TxtBx_NameCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_NameCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_NameCamera.Location = new System.Drawing.Point(371, 162);
             this.TxtBx_NameCamera.Name = "TxtBx_NameCamera";
             this.TxtBx_NameCamera.Palette = this.krypton;
@@ -233,8 +244,9 @@
             // 
             // TxtBx_BinningCamera
             // 
-            this.TxtBx_BinningCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.TxtBx_BinningCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_BinningCamera.Location = new System.Drawing.Point(57, 502);
             this.TxtBx_BinningCamera.Name = "TxtBx_BinningCamera";
             this.TxtBx_BinningCamera.Size = new System.Drawing.Size(91, 28);
@@ -245,8 +257,9 @@
             // 
             // Lbl_BitsPerPixelCamera
             // 
-            this.Lbl_BitsPerPixelCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_BitsPerPixelCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_BitsPerPixelCamera.Location = new System.Drawing.Point(57, 468);
             this.Lbl_BitsPerPixelCamera.Name = "Lbl_BitsPerPixelCamera";
             this.Lbl_BitsPerPixelCamera.Size = new System.Drawing.Size(136, 28);
@@ -257,8 +270,9 @@
             // 
             // Lbl_PixelSpacingVerticalCamera
             // 
-            this.Lbl_PixelSpacingVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_PixelSpacingVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_PixelSpacingVerticalCamera.Location = new System.Drawing.Point(57, 434);
             this.Lbl_PixelSpacingVerticalCamera.Name = "Lbl_PixelSpacingVerticalCamera";
             this.Lbl_PixelSpacingVerticalCamera.Size = new System.Drawing.Size(216, 28);
@@ -269,8 +283,9 @@
             // 
             // Lbl_PixelSpacingHorizontalCamera
             // 
-            this.Lbl_PixelSpacingHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_PixelSpacingHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_PixelSpacingHorizontalCamera.Location = new System.Drawing.Point(57, 400);
             this.Lbl_PixelSpacingHorizontalCamera.Name = "Lbl_PixelSpacingHorizontalCamera";
             this.Lbl_PixelSpacingHorizontalCamera.Size = new System.Drawing.Size(241, 28);
@@ -281,8 +296,9 @@
             // 
             // Llb_FPSMaxCamera
             // 
-            this.Llb_FPSMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Llb_FPSMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Llb_FPSMaxCamera.Location = new System.Drawing.Point(57, 366);
             this.Llb_FPSMaxCamera.Name = "Llb_FPSMaxCamera";
             this.Llb_FPSMaxCamera.Size = new System.Drawing.Size(101, 28);
@@ -293,8 +309,9 @@
             // 
             // Lbl_PixelsVerticalCamera
             // 
-            this.Lbl_PixelsVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_PixelsVerticalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_PixelsVerticalCamera.Location = new System.Drawing.Point(57, 332);
             this.Lbl_PixelsVerticalCamera.Name = "Lbl_PixelsVerticalCamera";
             this.Lbl_PixelsVerticalCamera.Size = new System.Drawing.Size(149, 28);
@@ -305,8 +322,9 @@
             // 
             // Lbl_PixelsHorizontalCamera
             // 
-            this.Lbl_PixelsHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_PixelsHorizontalCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_PixelsHorizontalCamera.Location = new System.Drawing.Point(57, 298);
             this.Lbl_PixelsHorizontalCamera.Name = "Lbl_PixelsHorizontalCamera";
             this.Lbl_PixelsHorizontalCamera.Size = new System.Drawing.Size(174, 28);
@@ -317,8 +335,9 @@
             // 
             // Lbl_ShutterMinCamera
             // 
-            this.Lbl_ShutterMinCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_ShutterMinCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_ShutterMinCamera.Location = new System.Drawing.Point(57, 264);
             this.Lbl_ShutterMinCamera.Name = "Lbl_ShutterMinCamera";
             this.Lbl_ShutterMinCamera.Size = new System.Drawing.Size(123, 28);
@@ -329,8 +348,9 @@
             // 
             // Lbl_ShutterMaxCamera
             // 
-            this.Lbl_ShutterMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_ShutterMaxCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_ShutterMaxCamera.Location = new System.Drawing.Point(57, 230);
             this.Lbl_ShutterMaxCamera.Name = "Lbl_ShutterMaxCamera";
             this.Lbl_ShutterMaxCamera.Size = new System.Drawing.Size(129, 28);
@@ -341,8 +361,9 @@
             // 
             // Lbl_TypeCamera
             // 
-            this.Lbl_TypeCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_TypeCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_TypeCamera.Location = new System.Drawing.Point(57, 196);
             this.Lbl_TypeCamera.Name = "Lbl_TypeCamera";
             this.Lbl_TypeCamera.Size = new System.Drawing.Size(142, 28);
@@ -353,8 +374,9 @@
             // 
             // Lbl_NameCamera
             // 
-            this.Lbl_NameCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Lbl_NameCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_NameCamera.Location = new System.Drawing.Point(57, 162);
             this.Lbl_NameCamera.Name = "Lbl_NameCamera";
             this.Lbl_NameCamera.Size = new System.Drawing.Size(76, 28);
@@ -367,23 +389,23 @@
             // 
             this.Lbl_TitleCamera.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lbl_TitleCamera.Location = new System.Drawing.Point(361, 37);
+            this.Lbl_TitleCamera.Location = new System.Drawing.Point(421, 40);
             this.Lbl_TitleCamera.Name = "Lbl_TitleCamera";
-            this.Lbl_TitleCamera.Size = new System.Drawing.Size(268, 49);
+            this.Lbl_TitleCamera.Size = new System.Drawing.Size(159, 49);
             this.Lbl_TitleCamera.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_TitleCamera.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_TitleCamera.StateNormal.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.Lbl_TitleCamera.StateNormal.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.Lbl_TitleCamera.TabIndex = 0;
-            this.Lbl_TitleCamera.Values.Text = "kryptonLabel1";
+            this.Lbl_TitleCamera.Values.Text = "Camera";
             // 
-            // FormCamera
+            // FormCameras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 554);
+            this.ClientSize = new System.Drawing.Size(946, 636);
             this.Controls.Add(this.PanelControlCamera);
-            this.Name = "FormCamera";
+            this.Name = "FormCameras";
             this.Text = "FormCamera";
             ((System.ComponentModel.ISupportInitialize)(this.PanelControlCamera)).EndInit();
             this.PanelControlCamera.ResumeLayout(false);

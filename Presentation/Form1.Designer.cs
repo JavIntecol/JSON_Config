@@ -757,6 +757,7 @@
             this.Controls.Add(this.Separador);
             this.Controls.Add(this.PanelLateral);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1530, 770);
             this.Name = "Form1";
             this.Palette = this.krypton;

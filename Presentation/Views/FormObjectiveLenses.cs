@@ -16,6 +16,9 @@ namespace Presentation.Views
         {
             InitializeComponent();
             Lbl_TitleStageAxes.Text = title;
+
+            CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(0);
+            CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(1);
         }
 
         private void PanelControlObjectiveLenses_Paint(object sender, PaintEventArgs e)

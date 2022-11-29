@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Presentation.Views
 {
-    public partial class FormCamera : Form
+    public partial class FormLightSheets : Form
     {
-        public FormCamera()
+        public FormLightSheets(string title)
         {
             InitializeComponent();
+            Lbl_TitleLightSheets.Text = title;
         }
     }
 }

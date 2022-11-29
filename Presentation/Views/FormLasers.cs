@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
 
 namespace Presentation.Views
 {
-    public partial class Camera : UserControl
+    public partial class FormLasers : Form
     {
-        public Camera()
+        public FormLasers(string title)
         {
             InitializeComponent();
+            Lbl_TitleLasers.Text = title;
         }
     }
 }

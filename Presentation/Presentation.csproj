@@ -65,17 +65,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Camera.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\Camera.Designer.cs">
-      <DependentUpon>Camera.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FormCamera.cs">
+    <Compile Include="Views\FormCameras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FormCamera.Designer.cs">
-      <DependentUpon>FormCamera.cs</DependentUpon>
+    <Compile Include="Views\FormCameras.Designer.cs">
+      <DependentUpon>FormCameras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormFilterWheels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormFilterWheels.Designer.cs">
+      <DependentUpon>FormFilterWheels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormLasers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormLasers.Designer.cs">
+      <DependentUpon>FormLasers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormLightSheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormLightSheets.Designer.cs">
+      <DependentUpon>FormLightSheets.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FormObjectiveLenses.cs">
       <SubType>Form</SubType>
@@ -101,11 +113,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Camera.resx">
-      <DependentUpon>Camera.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormCameras.resx">
+      <DependentUpon>FormCameras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FormCamera.resx">
-      <DependentUpon>FormCamera.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FormFilterWheels.resx">
+      <DependentUpon>FormFilterWheels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormLasers.resx">
+      <DependentUpon>FormLasers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormLightSheets.resx">
+      <DependentUpon>FormLightSheets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormObjectiveLenses.resx">
       <DependentUpon>FormObjectiveLenses.cs</DependentUpon>
