@@ -43,7 +43,7 @@
             this.PanelControlLasers.Location = new System.Drawing.Point(0, 0);
             this.PanelControlLasers.Name = "PanelControlLasers";
             this.PanelControlLasers.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.PanelControlLasers.Size = new System.Drawing.Size(946, 636);
+            this.PanelControlLasers.Size = new System.Drawing.Size(946, 553);
             this.PanelControlLasers.TabIndex = 2;
             // 
             // kryptonTextBox1
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 636);
+            this.ClientSize = new System.Drawing.Size(946, 553);
             this.Controls.Add(this.PanelControlLasers);
             this.Name = "FormLasers";
             this.Text = "FormLasers";

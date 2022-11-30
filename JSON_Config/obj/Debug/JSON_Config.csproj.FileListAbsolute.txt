@@ -1,0 +1,8 @@
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\bin\Debug\JSON_Config.exe.config
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\bin\Debug\JSON_Config.exe
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\bin\Debug\JSON_Config.pdb
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\obj\Debug\JSON_Config.csproj.AssemblyReference.cache
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\obj\Debug\JSON_Config.csproj.SuggestedBindingRedirects.cache
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\obj\Debug\JSON_Config.csproj.CoreCompileInputs.cache
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\obj\Debug\JSON_Config.exe
+C:\Users\Javier\Archivos\JSON_Config\JSON_Config\obj\Debug\JSON_Config.pdb

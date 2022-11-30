@@ -1,6 +1,7 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using Presentation.Views;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -239,11 +240,6 @@ namespace Presentation
             HideSubPanel();
         }
 
-        private void Btn_Summary_Click(object sender, EventArgs e)
-        {
-            HideSubPanel();
-        }
-
 
         private void AddTab(KryptonPanel ItemPanel, String Item)
         {
@@ -257,17 +253,43 @@ namespace Presentation
             ItemPanel.Controls.Add(tab);
         }
 
-        private void AddSubMenu(KryptonPanel ItemPanel, String Item)
+
+        public KryptonPanel subMenu_ObjectiveLens_1 = null;
+        public KryptonPanel subMenu_ObjectiveLens_2 = null;
+        public KryptonPanel subMenu_ObjectiveLens_3 = null;
+        public KryptonPanel subMenu_ObjectiveLens_4 = null;
+
+        public KryptonPanel subMenu_LightSheet_1 = null;
+        public KryptonPanel subMenu_LightSheet_2 = null;
+        public KryptonPanel subMenu_LightSheet_3 = null;
+        public KryptonPanel subMenu_LightSheet_4 = null;
+
+        public KryptonPanel subMenu_Laser_1 = null;
+        public KryptonPanel subMenu_Laser_2 = null;
+        public KryptonPanel subMenu_Laser_3 = null;
+        public KryptonPanel subMenu_Laser_4 = null;
+
+        public KryptonPanel subMenu_FilterWheel_1 = null;
+        public KryptonPanel subMenu_FilterWheel_2 = null;
+        public KryptonPanel subMenu_FilterWheel_3 = null;
+        public KryptonPanel subMenu_FilterWheel_4 = null;
+
+        public void AddSubMenu(KryptonPanel ItemPanel, String Item)
         {
             KryptonPanel subMenu = new KryptonPanel();
 
             subMenu.Name = "subMenu_" + Item;
             subMenu.Palette = krypton;
             subMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            
+            subMenu.AutoSize = true;
+
+            subMenu_ObjectiveLens_1 = subMenu;
+
+
 
             ItemPanel.Controls.Add(subMenu);
         }
+
 
         public void AddBotton(KryptonPanel ItemPanel, String Item, int numButtons)
         {
@@ -285,7 +307,10 @@ namespace Presentation
             //}
 
             if (Item == "Camera")
+            {
                 oBotton.Click += new EventHandler(handlerCameras_Click);
+            }
+
 
             if (Item == "StageAxis")
                 oBotton.Click += new EventHandler(handlerStageAxes_Click);
@@ -293,10 +318,8 @@ namespace Presentation
             if (Item == "ObjectiveLens")
             {
                 oBotton.Click += new EventHandler(handlerObjectiveLenses_Click);
-                AddSubMenu(PanelNumObjectiveLenses, Item+"_"+ numButtons.ToString());
+                AddSubMenu(PanelNumObjectiveLenses, Item + "_" + numButtons.ToString());
             }
-                
-
 
             if (Item == "LightSheet")
                 oBotton.Click += new EventHandler(handlerLightSheets_Click);
@@ -308,6 +331,51 @@ namespace Presentation
                 oBotton.Click += new EventHandler(handlerFilterWheels_Click);
 
             ItemPanel.Controls.Add(oBotton);
+
+        }
+
+        private void AddBtnSubmenu(KryptonPanel PanelSubmenu, string nameSubMenu, int numButton)
+        {
+            int numBtnSubmenu = DatosSubMenu.ObjectiveAxis;
+
+            KryptonButton BottonSubMenu = new KryptonButton();
+
+            BottonSubMenu.Name = "Btn_" + nameSubMenu + "_" + numButton.ToString();
+            BottonSubMenu.Text = nameSubMenu + " " + numButton.ToString();
+            BottonSubMenu.Palette = krypton;
+            BottonSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+
+
+            //if (numButtons > 1)
+            //{
+            //    oBotton.Enabled = false;
+            //}
+
+            PanelSubmenu.Controls.Add(BottonSubMenu);
+
+            AddTab(PanelSubmenu, nameSubMenu);
+        }
+
+        public void AddBtnNext(String Item)
+        {
+            this.PanelNext.Controls.Clear();
+
+            KryptonButton BottonNext = new KryptonButton();
+
+            BottonNext.Name = "Btn_Next" + Item;
+            BottonNext.Text = "Next";
+            BottonNext.Palette = krypton;
+            BottonNext.Location = new Point(630, 20);
+            BottonNext.Size = new Size(90, 40);
+
+            if (Item == "ObjectiveLens")
+            {
+                
+                BottonNext.Click += new EventHandler(handlerObjectiveAxis_Click);
+                
+            }
+
+            PanelNext.Controls.Add(BottonNext);
 
         }
 
@@ -328,6 +396,8 @@ namespace Presentation
                 {
                     FormCamera_1 = new FormCameras(IdBtnCamera);
                     openChildForm(FormCamera_1, sender);
+
+
                 }
                 else
                 {
@@ -374,6 +444,7 @@ namespace Presentation
                 }
             }
 
+            AddBtnNext("Camera");
 
         }
 
@@ -501,6 +572,9 @@ namespace Presentation
                     openChildForm(FormObjectiveLens_4, sender);
                 }
             }
+
+            AddBtnNext("ObjectiveLens");
+
         }
 
 
@@ -695,7 +769,26 @@ namespace Presentation
 
         #endregion
 
-        //private Form activeForm = null;
+
+        #region HandlersSubMenu
+
+        private Form FormObjectiveAxis_1 = null;
+        private void handlerObjectiveAxis_Click(object sender, EventArgs e)
+        {
+            if (DatosSubMenu.ObjectiveAxis == 1)
+            {
+                this.subMenu_ObjectiveLens_1.Controls.Clear();
+                AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", 1);
+            }
+            else
+            {
+                this.subMenu_ObjectiveLens_1.Controls.Clear();
+            }
+        }
+
+        #endregion
+
+
         private void openChildForm(Form childForm, object sender)
         {
             AddOwnedForm(childForm);
@@ -711,5 +804,7 @@ namespace Presentation
 
 
         }
+
+
     }
 }

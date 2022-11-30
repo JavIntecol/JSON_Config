@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PanelControlStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.Lbl_TitleStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.TxtBx_StepsStageAxes_5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.krypton = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.Btn_NextStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.TxtBx_StepsStageAxes_4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TxtBx_StepsStageAxes_3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.TxtBx_StepsStageAxes_2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TxtBx_WorkPositionStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TxtBx_HomePositionStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TxtBx_SoftwareLimitMaxStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -53,10 +55,7 @@
             this.Lbl_InvertedStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.Lbl_TypeStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.Lbl_NameStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.TxtBx_StepsStageAxes_2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TxtBx_StepsStageAxes_3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TxtBx_StepsStageAxes_4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.TxtBx_StepsStageAxes_5 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.Lbl_TitleStageAxes = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.PanelControlStageAxes)).BeginInit();
             this.PanelControlStageAxes.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +66,6 @@
             this.PanelControlStageAxes.Controls.Add(this.TxtBx_StepsStageAxes_4);
             this.PanelControlStageAxes.Controls.Add(this.TxtBx_StepsStageAxes_3);
             this.PanelControlStageAxes.Controls.Add(this.TxtBx_StepsStageAxes_2);
-            this.PanelControlStageAxes.Controls.Add(this.Btn_NextStageAxes);
             this.PanelControlStageAxes.Controls.Add(this.TxtBx_WorkPositionStageAxes);
             this.PanelControlStageAxes.Controls.Add(this.TxtBx_HomePositionStageAxes);
             this.PanelControlStageAxes.Controls.Add(this.TxtBx_SoftwareLimitMaxStageAxes);
@@ -93,32 +91,56 @@
             this.PanelControlStageAxes.Location = new System.Drawing.Point(0, 0);
             this.PanelControlStageAxes.Name = "PanelControlStageAxes";
             this.PanelControlStageAxes.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.PanelControlStageAxes.Size = new System.Drawing.Size(946, 636);
+            this.PanelControlStageAxes.Size = new System.Drawing.Size(946, 553);
             this.PanelControlStageAxes.TabIndex = 0;
             // 
-            // Lbl_TitleStageAxes
+            // TxtBx_StepsStageAxes_5
             // 
-            this.Lbl_TitleStageAxes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_StepsStageAxes_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Lbl_TitleStageAxes.Location = new System.Drawing.Point(395, 40);
-            this.Lbl_TitleStageAxes.Name = "Lbl_TitleStageAxes";
-            this.Lbl_TitleStageAxes.Size = new System.Drawing.Size(210, 49);
-            this.Lbl_TitleStageAxes.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
-            this.Lbl_TitleStageAxes.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_TitleStageAxes.StateNormal.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.Lbl_TitleStageAxes.StateNormal.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.Lbl_TitleStageAxes.TabIndex = 1;
-            this.Lbl_TitleStageAxes.Values.Text = "StageAxes";
+            this.TxtBx_StepsStageAxes_5.Location = new System.Drawing.Point(652, 263);
+            this.TxtBx_StepsStageAxes_5.Name = "TxtBx_StepsStageAxes_5";
+            this.TxtBx_StepsStageAxes_5.Palette = this.krypton;
+            this.TxtBx_StepsStageAxes_5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.TxtBx_StepsStageAxes_5.Size = new System.Drawing.Size(60, 27);
+            this.TxtBx_StepsStageAxes_5.TabIndex = 51;
             // 
-            // Btn_NextStageAxes
+            // TxtBx_StepsStageAxes_4
             // 
-            this.Btn_NextStageAxes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_NextStageAxes.Location = new System.Drawing.Point(771, 548);
-            this.Btn_NextStageAxes.Name = "Btn_NextStageAxes";
-            this.Btn_NextStageAxes.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.Btn_NextStageAxes.Size = new System.Drawing.Size(125, 47);
-            this.Btn_NextStageAxes.TabIndex = 47;
-            this.Btn_NextStageAxes.Values.Text = "Next";
+            this.TxtBx_StepsStageAxes_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtBx_StepsStageAxes_4.Location = new System.Drawing.Point(580, 263);
+            this.TxtBx_StepsStageAxes_4.Name = "TxtBx_StepsStageAxes_4";
+            this.TxtBx_StepsStageAxes_4.Palette = this.krypton;
+            this.TxtBx_StepsStageAxes_4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.TxtBx_StepsStageAxes_4.Size = new System.Drawing.Size(62, 27);
+            this.TxtBx_StepsStageAxes_4.TabIndex = 50;
+            // 
+            // TxtBx_StepsStageAxes_3
+            // 
+            this.TxtBx_StepsStageAxes_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtBx_StepsStageAxes_3.Location = new System.Drawing.Point(508, 263);
+            this.TxtBx_StepsStageAxes_3.Name = "TxtBx_StepsStageAxes_3";
+            this.TxtBx_StepsStageAxes_3.Palette = this.krypton;
+            this.TxtBx_StepsStageAxes_3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.TxtBx_StepsStageAxes_3.Size = new System.Drawing.Size(62, 27);
+            this.TxtBx_StepsStageAxes_3.TabIndex = 49;
+            // 
+            // TxtBx_StepsStageAxes_2
+            // 
+            this.TxtBx_StepsStageAxes_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtBx_StepsStageAxes_2.Location = new System.Drawing.Point(436, 263);
+            this.TxtBx_StepsStageAxes_2.Name = "TxtBx_StepsStageAxes_2";
+            this.TxtBx_StepsStageAxes_2.Palette = this.krypton;
+            this.TxtBx_StepsStageAxes_2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.TxtBx_StepsStageAxes_2.Size = new System.Drawing.Size(62, 27);
+            this.TxtBx_StepsStageAxes_2.TabIndex = 48;
             // 
             // TxtBx_WorkPositionStageAxes
             // 
@@ -370,59 +392,25 @@
             this.Lbl_NameStageAxes.TabIndex = 25;
             this.Lbl_NameStageAxes.Values.Text = "Name:";
             // 
-            // TxtBx_StepsStageAxes_2
+            // Lbl_TitleStageAxes
             // 
-            this.TxtBx_StepsStageAxes_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_TitleStageAxes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBx_StepsStageAxes_2.Location = new System.Drawing.Point(436, 263);
-            this.TxtBx_StepsStageAxes_2.Name = "TxtBx_StepsStageAxes_2";
-            this.TxtBx_StepsStageAxes_2.Palette = this.krypton;
-            this.TxtBx_StepsStageAxes_2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.TxtBx_StepsStageAxes_2.Size = new System.Drawing.Size(62, 27);
-            this.TxtBx_StepsStageAxes_2.TabIndex = 48;
-            // 
-            // TxtBx_StepsStageAxes_3
-            // 
-            this.TxtBx_StepsStageAxes_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBx_StepsStageAxes_3.Location = new System.Drawing.Point(508, 263);
-            this.TxtBx_StepsStageAxes_3.Name = "TxtBx_StepsStageAxes_3";
-            this.TxtBx_StepsStageAxes_3.Palette = this.krypton;
-            this.TxtBx_StepsStageAxes_3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.TxtBx_StepsStageAxes_3.Size = new System.Drawing.Size(62, 27);
-            this.TxtBx_StepsStageAxes_3.TabIndex = 49;
-            // 
-            // TxtBx_StepsStageAxes_4
-            // 
-            this.TxtBx_StepsStageAxes_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBx_StepsStageAxes_4.Location = new System.Drawing.Point(580, 263);
-            this.TxtBx_StepsStageAxes_4.Name = "TxtBx_StepsStageAxes_4";
-            this.TxtBx_StepsStageAxes_4.Palette = this.krypton;
-            this.TxtBx_StepsStageAxes_4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.TxtBx_StepsStageAxes_4.Size = new System.Drawing.Size(62, 27);
-            this.TxtBx_StepsStageAxes_4.TabIndex = 50;
-            // 
-            // TxtBx_StepsStageAxes_5
-            // 
-            this.TxtBx_StepsStageAxes_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBx_StepsStageAxes_5.Location = new System.Drawing.Point(652, 263);
-            this.TxtBx_StepsStageAxes_5.Name = "TxtBx_StepsStageAxes_5";
-            this.TxtBx_StepsStageAxes_5.Palette = this.krypton;
-            this.TxtBx_StepsStageAxes_5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.TxtBx_StepsStageAxes_5.Size = new System.Drawing.Size(60, 27);
-            this.TxtBx_StepsStageAxes_5.TabIndex = 51;
+            this.Lbl_TitleStageAxes.Location = new System.Drawing.Point(395, 40);
+            this.Lbl_TitleStageAxes.Name = "Lbl_TitleStageAxes";
+            this.Lbl_TitleStageAxes.Size = new System.Drawing.Size(210, 49);
+            this.Lbl_TitleStageAxes.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
+            this.Lbl_TitleStageAxes.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_TitleStageAxes.StateNormal.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.Lbl_TitleStageAxes.StateNormal.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.Lbl_TitleStageAxes.TabIndex = 1;
+            this.Lbl_TitleStageAxes.Values.Text = "StageAxes";
             // 
             // FormStageAxes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 636);
+            this.ClientSize = new System.Drawing.Size(946, 553);
             this.Controls.Add(this.PanelControlStageAxes);
             this.Name = "FormStageAxes";
             this.Text = "FormStageAxes";
@@ -442,7 +430,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_StepsStageAxes_4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_StepsStageAxes_3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_StepsStageAxes_2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton Btn_NextStageAxes;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_WorkPositionStageAxes;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_HomePositionStageAxes;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_SoftwareLimitMaxStageAxes;

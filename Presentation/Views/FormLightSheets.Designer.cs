@@ -43,7 +43,7 @@
             this.PanelControlLightSheets.Location = new System.Drawing.Point(0, 0);
             this.PanelControlLightSheets.Name = "PanelControlLightSheets";
             this.PanelControlLightSheets.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.PanelControlLightSheets.Size = new System.Drawing.Size(946, 636);
+            this.PanelControlLightSheets.Size = new System.Drawing.Size(946, 553);
             this.PanelControlLightSheets.TabIndex = 1;
             // 
             // kryptonTextBox1
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 636);
+            this.ClientSize = new System.Drawing.Size(946, 553);
             this.Controls.Add(this.PanelControlLightSheets);
             this.Name = "FormLightSheets";
             this.Text = "FormLightSheets";

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.krypton = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.PanelControlCamera = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.Btn_NextCamera = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonTextBox10 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TxtBx_BitsPerPixelCamera = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.TxtBx_PixelSpacingVerticalCamera = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -66,7 +65,6 @@
             // PanelControlCamera
             // 
             this.PanelControlCamera.AutoSize = true;
-            this.PanelControlCamera.Controls.Add(this.Btn_NextCamera);
             this.PanelControlCamera.Controls.Add(this.kryptonTextBox10);
             this.PanelControlCamera.Controls.Add(this.TxtBx_BitsPerPixelCamera);
             this.PanelControlCamera.Controls.Add(this.TxtBx_PixelSpacingVerticalCamera);
@@ -96,19 +94,8 @@
             this.PanelControlCamera.Name = "PanelControlCamera";
             this.PanelControlCamera.Palette = this.krypton;
             this.PanelControlCamera.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelControlCamera.Size = new System.Drawing.Size(946, 636);
+            this.PanelControlCamera.Size = new System.Drawing.Size(946, 553);
             this.PanelControlCamera.TabIndex = 1;
-            // 
-            // Btn_NextCamera
-            // 
-            this.Btn_NextCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_NextCamera.Location = new System.Drawing.Point(778, 547);
-            this.Btn_NextCamera.Name = "Btn_NextCamera";
-            this.Btn_NextCamera.Palette = this.krypton;
-            this.Btn_NextCamera.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.Btn_NextCamera.Size = new System.Drawing.Size(125, 47);
-            this.Btn_NextCamera.TabIndex = 23;
-            this.Btn_NextCamera.Values.Text = "Next";
             // 
             // kryptonTextBox10
             // 
@@ -403,7 +390,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 636);
+            this.ClientSize = new System.Drawing.Size(946, 553);
             this.Controls.Add(this.PanelControlCamera);
             this.Name = "FormCameras";
             this.Text = "FormCamera";
@@ -418,7 +405,6 @@
         #endregion
         private ComponentFactory.Krypton.Toolkit.KryptonPalette krypton;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel PanelControlCamera;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton Btn_NextCamera;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox10;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_BitsPerPixelCamera;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox TxtBx_PixelSpacingVerticalCamera;

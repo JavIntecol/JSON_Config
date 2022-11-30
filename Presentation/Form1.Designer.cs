@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.krypton = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.PanelLateral = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.Btn_Summary = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.PanelFilterWheels = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.CmbBx_FilterWheels = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -77,7 +76,10 @@
             this.PanelNumCameras = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonBorderEdge1 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.Lbl_NumCameras = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.PanelNext = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.PanelViews = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.PanelGenerate = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.PanelLateral)).BeginInit();
             this.PanelLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelFilterWheels)).BeginInit();
@@ -112,7 +114,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelNumObjectiveLenses)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelNumStageAxes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelNumCameras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelViews)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelGenerate)).BeginInit();
+            this.PanelGenerate.SuspendLayout();
             this.SuspendLayout();
             // 
             // krypton
@@ -122,7 +127,7 @@
             // PanelLateral
             // 
             this.PanelLateral.AutoScroll = true;
-            this.PanelLateral.Controls.Add(this.Btn_Summary);
+            this.PanelLateral.Controls.Add(this.PanelGenerate);
             this.PanelLateral.Controls.Add(this.PanelFilterWheels);
             this.PanelLateral.Controls.Add(this.Btn_FilterWheels);
             this.PanelLateral.Controls.Add(this.PanelLasers);
@@ -144,18 +149,6 @@
             this.PanelLateral.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlRibbonAppMenu;
             this.PanelLateral.Size = new System.Drawing.Size(309, 723);
             this.PanelLateral.TabIndex = 0;
-            // 
-            // Btn_Summary
-            // 
-            this.Btn_Summary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_Summary.Location = new System.Drawing.Point(0, 1000);
-            this.Btn_Summary.Name = "Btn_Summary";
-            this.Btn_Summary.Palette = this.krypton;
-            this.Btn_Summary.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.Btn_Summary.Size = new System.Drawing.Size(288, 43);
-            this.Btn_Summary.TabIndex = 13;
-            this.Btn_Summary.Values.Text = "Summary";
-            this.Btn_Summary.Click += new System.EventHandler(this.Btn_Summary_Click);
             // 
             // PanelFilterWheels
             // 
@@ -511,6 +504,7 @@
             // 
             // SplitContainer.Panel2
             // 
+            this.SplitContainer.Panel2.Controls.Add(this.PanelNext);
             this.SplitContainer.Panel2.Controls.Add(this.PanelViews);
             this.SplitContainer.Panel2.Palette = this.krypton;
             this.SplitContainer.Panel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -735,17 +729,51 @@
             this.Lbl_NumCameras.TabIndex = 0;
             this.Lbl_NumCameras.Values.Text = "Cameras";
             // 
+            // PanelNext
+            // 
+            this.PanelNext.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelNext.Location = new System.Drawing.Point(0, 640);
+            this.PanelNext.Name = "PanelNext";
+            this.PanelNext.Palette = this.krypton;
+            this.PanelNext.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.PanelNext.Size = new System.Drawing.Size(1004, 83);
+            this.PanelNext.TabIndex = 2;
+            // 
             // PanelViews
             // 
-            this.PanelViews.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelViews.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelViews.Location = new System.Drawing.Point(0, 0);
             this.PanelViews.Name = "PanelViews";
             this.PanelViews.Padding = new System.Windows.Forms.Padding(20);
             this.PanelViews.Palette = this.krypton;
             this.PanelViews.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.PanelViews.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderDockInactive;
-            this.PanelViews.Size = new System.Drawing.Size(1004, 723);
+            this.PanelViews.Size = new System.Drawing.Size(1004, 640);
             this.PanelViews.TabIndex = 1;
+            // 
+            // PanelGenerate
+            // 
+            this.PanelGenerate.AutoSize = true;
+            this.PanelGenerate.Controls.Add(this.kryptonButton1);
+            this.PanelGenerate.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelGenerate.Location = new System.Drawing.Point(0, 1000);
+            this.PanelGenerate.Name = "PanelGenerate";
+            this.PanelGenerate.Padding = new System.Windows.Forms.Padding(0, 100, 0, 0);
+            this.PanelGenerate.Palette = this.krypton;
+            this.PanelGenerate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.PanelGenerate.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ControlRibbonAppMenu;
+            this.PanelGenerate.Size = new System.Drawing.Size(288, 100);
+            this.PanelGenerate.TabIndex = 14;
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Location = new System.Drawing.Point(47, 28);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Palette = this.krypton;
+            this.kryptonButton1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonButton1.Size = new System.Drawing.Size(195, 51);
+            this.kryptonButton1.TabIndex = 13;
+            this.kryptonButton1.Values.Text = "Generate";
             // 
             // Form1
             // 
@@ -767,6 +795,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PanelLateral)).EndInit();
             this.PanelLateral.ResumeLayout(false);
+            this.PanelLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelFilterWheels)).EndInit();
             this.PanelFilterWheels.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CmbBx_FilterWheels)).EndInit();
@@ -800,7 +829,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.PanelNumObjectiveLenses)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelNumStageAxes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelNumCameras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelNext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelViews)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelGenerate)).EndInit();
+            this.PanelGenerate.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -836,7 +868,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox CmbBx_FilterWheels;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton Btn_FilterWheels;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton Btn_Summary;
         private ComponentFactory.Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel Lbl_NumCameras;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel PanelNumCameras;
@@ -856,6 +887,9 @@
         private ComponentFactory.Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge4;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel Lbl_NumLightSheets;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel PanelViews;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel PanelNext;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel PanelGenerate;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }
 

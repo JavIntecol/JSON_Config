@@ -43,7 +43,7 @@
             this.PanelControlFilterWheels.Location = new System.Drawing.Point(0, 0);
             this.PanelControlFilterWheels.Name = "PanelControlFilterWheels";
             this.PanelControlFilterWheels.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
-            this.PanelControlFilterWheels.Size = new System.Drawing.Size(946, 636);
+            this.PanelControlFilterWheels.Size = new System.Drawing.Size(946, 553);
             this.PanelControlFilterWheels.TabIndex = 3;
             // 
             // kryptonTextBox1
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 636);
+            this.ClientSize = new System.Drawing.Size(946, 553);
             this.Controls.Add(this.PanelControlFilterWheels);
             this.Name = "FormFilterWheels";
             this.Text = "FormFilterWheels";

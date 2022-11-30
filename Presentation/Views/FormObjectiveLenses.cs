@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ComponentFactory.Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +20,18 @@ namespace Presentation.Views
 
             CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(0);
             CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(1);
+           
         }
-
-        private void PanelControlObjectiveLenses_Paint(object sender, PaintEventArgs e)
+       
+        public int indiceObjectiveAxis;
+        public void CmbBx_ObjectiveAxisObjectiveLenses_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
+            indiceObjectiveAxis = CmbBx_ObjectiveAxisObjectiveLenses.SelectedIndex;
+            
+            DatosSubMenu.ObjectiveAxis = indiceObjectiveAxis;
+            
         }
+               
     }
 }
