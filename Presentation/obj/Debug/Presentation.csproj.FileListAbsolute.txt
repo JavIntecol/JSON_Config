@@ -30,8 +30,6 @@ C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.csproj.A
 C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.csproj.SuggestedBindingRedirects.cache
 C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Form1.resources
 C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Properties.Resources.resources
-C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.Camera.resources
-C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormCamera.resources
 C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormObjectiveLenses.resources
 C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormStageAxes.resources
 C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.csproj.GenerateResource.cache
@@ -60,3 +58,7 @@ C:\Users\Javier\Archivos\JSON_Config\Presentation\obj\Debug\Presentation.Views.F
 C:\Users\Javier\Archivos\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormLasers.resources
 C:\Users\Javier\Archivos\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormFilterWheels.resources
 C:\Users\Javier\Archivos\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormCameras.resources
+C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormCameras.resources
+C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormFilterWheels.resources
+C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormLasers.resources
+C:\Users\Javier\Desktop\JSON_Config\Presentation\obj\Debug\Presentation.Views.FormLightSheets.resources

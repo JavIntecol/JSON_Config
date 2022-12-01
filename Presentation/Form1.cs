@@ -274,7 +274,7 @@ namespace Presentation
         public KryptonPanel subMenu_FilterWheel_3 = null;
         public KryptonPanel subMenu_FilterWheel_4 = null;
 
-        public void AddSubMenu(KryptonPanel ItemPanel, String Item)
+        public KryptonPanel AddSubMenu(KryptonPanel ItemPanel, String Item)
         {
             KryptonPanel subMenu = new KryptonPanel();
 
@@ -288,6 +288,8 @@ namespace Presentation
 
 
             ItemPanel.Controls.Add(subMenu);
+
+            return subMenu;
         }
 
 
@@ -296,7 +298,8 @@ namespace Presentation
             KryptonButton oBotton = new KryptonButton();
 
             oBotton.Name = "Btn_" + Item + "_" + numButtons.ToString();
-            oBotton.Text = Item + " " + numButtons.ToString();
+            oBotton.Text = Item;
+            oBotton.Values.ExtraText = numButtons.ToString();
             oBotton.Palette = krypton;
             oBotton.Dock = System.Windows.Forms.DockStyle.Top;
 
@@ -316,7 +319,7 @@ namespace Presentation
                 oBotton.Click += new EventHandler(handlerStageAxes_Click);
 
             if (Item == "ObjectiveLens")
-            {
+            {                
                 oBotton.Click += new EventHandler(handlerObjectiveLenses_Click);
                 AddSubMenu(PanelNumObjectiveLenses, Item + "_" + numButtons.ToString());
             }
@@ -334,14 +337,14 @@ namespace Presentation
 
         }
 
-        private void AddBtnSubmenu(KryptonPanel PanelSubmenu, string nameSubMenu, int numButton)
+        private void AddBtnSubmenu(KryptonPanel PanelSubmenu, string nameSubMenu, string numButton)
         {
             int numBtnSubmenu = DatosSubMenu.ObjectiveAxis;
 
             KryptonButton BottonSubMenu = new KryptonButton();
 
-            BottonSubMenu.Name = "Btn_" + nameSubMenu + "_" + numButton.ToString();
-            BottonSubMenu.Text = nameSubMenu + " " + numButton.ToString();
+            BottonSubMenu.Name = "Btn_" + nameSubMenu + "_" + numButton;
+            BottonSubMenu.Text = nameSubMenu + " " + numButton;
             BottonSubMenu.Palette = krypton;
             BottonSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
 
@@ -356,7 +359,7 @@ namespace Presentation
             AddTab(PanelSubmenu, nameSubMenu);
         }
 
-        public void AddBtnNext(String Item)
+        public void AddBtnNext(String Item, string IdBtn)
         {
             this.PanelNext.Controls.Clear();
 
@@ -364,9 +367,11 @@ namespace Presentation
 
             BottonNext.Name = "Btn_Next" + Item;
             BottonNext.Text = "Next";
+            BottonNext.Tag = IdBtn;
             BottonNext.Palette = krypton;
             BottonNext.Location = new Point(630, 20);
             BottonNext.Size = new Size(90, 40);
+            //BottonNext.
 
             if (Item == "ObjectiveLens")
             {
@@ -444,7 +449,7 @@ namespace Presentation
                 }
             }
 
-            AddBtnNext("Camera");
+            AddBtnNext("Camera", "0");
 
         }
 
@@ -518,15 +523,17 @@ namespace Presentation
         private Form FormObjectiveLens_4 = null;
         private void handlerObjectiveLenses_Click(object sender, EventArgs e)
         {
-            KryptonButton repBtnObjectiveLens = sender as KryptonButton;
-            string IdBtnObjectiveLens = repBtnObjectiveLens.Text;
+            KryptonButton repBtnObjectiveLens = sender as KryptonButton;            
+            string IdBtnObjectiveLens = repBtnObjectiveLens.Values.ExtraText;
+            string NameBtnObjectiveLens = repBtnObjectiveLens.Text + " " + IdBtnObjectiveLens;
 
-            if (IdBtnObjectiveLens == "ObjectiveLens 1")
+            if (IdBtnObjectiveLens == "1")
             {
                 if (FormObjectiveLens_1 == null)
                 {
-                    FormObjectiveLens_1 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    FormObjectiveLens_1 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_1, sender);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
                 }
                 else
                 {
@@ -534,12 +541,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnObjectiveLens == "ObjectiveLens 2")
+            if (IdBtnObjectiveLens == "2")
             {
                 if (FormObjectiveLens_2 == null)
                 {
-                    FormObjectiveLens_2 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    FormObjectiveLens_2 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_2, sender);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
                 }
                 else
                 {
@@ -547,12 +555,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnObjectiveLens == "ObjectiveLens 3")
+            if (IdBtnObjectiveLens == "3")
             {
                 if (FormObjectiveLens_3 == null)
                 {
-                    FormObjectiveLens_3 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    FormObjectiveLens_3 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_3, sender);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
                 }
                 else
                 {
@@ -560,12 +569,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnObjectiveLens == "ObjectiveLens 4")
+            if (IdBtnObjectiveLens == "4")
             {
                 if (FormObjectiveLens_4 == null)
                 {
-                    FormObjectiveLens_4 = new FormObjectiveLenses(IdBtnObjectiveLens);
+                    FormObjectiveLens_4 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_4, sender);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
                 }
                 else
                 {
@@ -573,7 +583,7 @@ namespace Presentation
                 }
             }
 
-            AddBtnNext("ObjectiveLens");
+            
 
         }
 
@@ -770,15 +780,37 @@ namespace Presentation
         #endregion
 
 
+        private void AddTitleSubmenu(KryptonPanel PanelSubmenu, string Lbl_TitleSubMenu, string numBtnSubMenu)
+        {
+            KryptonLabel LabelTitleSubmenu = new KryptonLabel();
+            FontFamily fontFamily = new FontFamily("Microsoft Sans Serif");
+            Font font = new Font(fontFamily, 12, FontStyle.Bold, GraphicsUnit.Pixel);
+
+            LabelTitleSubmenu.Name = "Btn_" + numBtnSubMenu + "_" + numBtnSubMenu;
+            LabelTitleSubmenu.Text = Lbl_TitleSubMenu + " " + numBtnSubMenu;
+            LabelTitleSubmenu.StateNormal.ShortText.Font = font;
+            LabelTitleSubmenu.Palette = krypton;            
+            LabelTitleSubmenu.StateNormal.ShortText.Color1 = Color.White;
+            LabelTitleSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+
+            PanelSubmenu.Controls.Add(LabelTitleSubmenu);
+
+        }
+
         #region HandlersSubMenu
 
         private Form FormObjectiveAxis_1 = null;
         private void handlerObjectiveAxis_Click(object sender, EventArgs e)
         {
+            
+            KryptonButton repBtnObjectiveAxis = sender as KryptonButton;
+            string IdBtnObjectiveAxis = repBtnObjectiveAxis.Tag.ToString();
+
             if (DatosSubMenu.ObjectiveAxis == 1)
             {
-                this.subMenu_ObjectiveLens_1.Controls.Clear();
-                AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", 1);
+                this.subMenu_ObjectiveLens_1.Controls.Clear();                
+                AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+                AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
             }
             else
             {
