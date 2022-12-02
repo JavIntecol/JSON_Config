@@ -80,7 +80,7 @@
             this.CmbBx_ObjectiveAxisObjectiveLenses.DropDownWidth = 364;
             this.CmbBx_ObjectiveAxisObjectiveLenses.Location = new System.Drawing.Point(368, 360);
             this.CmbBx_ObjectiveAxisObjectiveLenses.Name = "CmbBx_ObjectiveAxisObjectiveLenses";
-            this.CmbBx_ObjectiveAxisObjectiveLenses.Size = new System.Drawing.Size(360, 25);
+            this.CmbBx_ObjectiveAxisObjectiveLenses.Size = new System.Drawing.Size(322, 25);
             this.CmbBx_ObjectiveAxisObjectiveLenses.TabIndex = 38;
             this.CmbBx_ObjectiveAxisObjectiveLenses.SelectedIndexChanged += new System.EventHandler(this.CmbBx_ObjectiveAxisObjectiveLenses_SelectedIndexChanged);
             // 
@@ -269,6 +269,7 @@
             this.Controls.Add(this.PanelControlObjectiveLenses);
             this.Name = "FormObjectiveLenses";
             this.Text = "FormObjectiveLenses";
+            this.Load += new System.EventHandler(this.FormObjectiveLenses_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PanelControlObjectiveLenses)).EndInit();
             this.PanelControlObjectiveLenses.ResumeLayout(false);
             this.PanelControlObjectiveLenses.PerformLayout();

@@ -1,5 +1,6 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
 using Presentation.Views;
+using Presentation.Views.SubMenu;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -365,6 +366,7 @@ namespace Presentation
 
             BottonSubMenu.Name = "Btn_" + nameSubMenu + "_" + numButton;
             BottonSubMenu.Text = nameSubMenu + " " + numButton;
+            BottonSubMenu.Tag = numButton;
             BottonSubMenu.Palette = krypton;
             BottonSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
 
@@ -389,8 +391,8 @@ namespace Presentation
             BottonNext.Text = "Next";
             BottonNext.Tag = IdBtn;
             BottonNext.Palette = krypton;
-            BottonNext.Location = new Point(630, 20);
-            BottonNext.Size = new Size(90, 40);
+            BottonNext.Location = new Point(580, 20);
+            BottonNext.Size = new Size(100, 40);
             //BottonNext.
 
             if (Item == "ObjectiveLens")
@@ -817,7 +819,7 @@ namespace Presentation
 
         }
 
-        #region HandlersSubMenu
+        #region Handlers Items SubMenu
 
         private Form FormObjectiveAxis_1 = null;
         private void handlerObjectiveAxis_Click(object sender, EventArgs e)
@@ -826,33 +828,33 @@ namespace Presentation
             KryptonButton repBtnObjectiveAxis = sender as KryptonButton;
             string IdBtnObjectiveAxis = repBtnObjectiveAxis.Tag.ToString();
 
-            if (DatosSubMenu.ObjectiveAxis == 1)
+            if (DatosSubMenu.ObjectiveAxis > 0)
             {
                 if(IdBtnObjectiveAxis=="1")
                 {
                     this.subMenu_ObjectiveLens_1.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", "1");
                     AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
                 if (IdBtnObjectiveAxis == "2")
                 {
                     this.subMenu_ObjectiveLens_2.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddBtnSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", "1");
                     AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
                 if (IdBtnObjectiveAxis == "3")
                 {
                     this.subMenu_ObjectiveLens_3.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddBtnSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", "1");
                     AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
                 if (IdBtnObjectiveAxis == "4")
                 {
                     this.subMenu_ObjectiveLens_1.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddBtnSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", "1");
                     AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
@@ -862,6 +864,22 @@ namespace Presentation
             {
                 this.subMenu_ObjectiveLens_1.Controls.Clear();
             }
+        }
+
+        #endregion
+
+        #region Handlers SubMenus
+
+        Form newObjectiveAxis = null;
+        private void handlerSubMenuObjectiveAxis_Click(object sender, EventArgs e)
+        {
+            
+            KryptonButton repBtnSubMenuObjectiveAxis = sender as KryptonButton;
+            string IdBtnSubMenuObjectiveAxis = repBtnSubMenuObjectiveAxis.Text;
+
+            newObjectiveAxis = new FormObjectiveAxis(IdBtnSubMenuObjectiveAxis);
+            openChildForm(newObjectiveAxis, sender);           
+
         }
 
         #endregion

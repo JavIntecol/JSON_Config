@@ -102,6 +102,12 @@
     <Compile Include="Views\FormStageAxes.Designer.cs">
       <DependentUpon>FormStageAxes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SubMenu\FormObjectiveAxis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenu\FormObjectiveAxis.Designer.cs">
+      <DependentUpon>FormObjectiveAxis.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="Views\FormStageAxes.resx">
       <DependentUpon>FormStageAxes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenu\FormObjectiveAxis.resx">
+      <DependentUpon>FormObjectiveAxis.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -145,5 +154,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

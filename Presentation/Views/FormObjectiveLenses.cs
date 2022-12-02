@@ -32,6 +32,10 @@ namespace Presentation.Views
             DatosSubMenu.ObjectiveAxis = indiceObjectiveAxis;
             
         }
-               
+
+        private void FormObjectiveLenses_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
