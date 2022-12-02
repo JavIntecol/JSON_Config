@@ -274,24 +274,44 @@ namespace Presentation
         public KryptonPanel subMenu_FilterWheel_3 = null;
         public KryptonPanel subMenu_FilterWheel_4 = null;
 
-        public KryptonPanel AddSubMenu(KryptonPanel ItemPanel, String Item)
+        public void AddSubMenu(KryptonPanel ItemPanel, String Item, int idSubMenu)
         {
             KryptonPanel subMenu = new KryptonPanel();
 
             subMenu.Name = "subMenu_" + Item;
+            subMenu.Tag = idSubMenu.ToString();
             subMenu.Palette = krypton;
             subMenu.Dock = System.Windows.Forms.DockStyle.Top;
             subMenu.AutoSize = true;
 
-            subMenu_ObjectiveLens_1 = subMenu;
+            if (idSubMenu ==1)
+            {
+                subMenu_ObjectiveLens_1 = subMenu;
+            }
+
+            if (idSubMenu == 2)
+            {
+                subMenu_ObjectiveLens_2 = subMenu;
+            }
+
+            if (idSubMenu == 3)
+            {
+                subMenu_ObjectiveLens_3 = subMenu;
+            }
+
+            if (idSubMenu == 4)
+            {
+                subMenu_ObjectiveLens_4 = subMenu;
+            }
 
 
 
             ItemPanel.Controls.Add(subMenu);
 
-            return subMenu;
+            //return subMenu;
         }
 
+        
 
         public void AddBotton(KryptonPanel ItemPanel, String Item, int numButtons)
         {
@@ -321,7 +341,7 @@ namespace Presentation
             if (Item == "ObjectiveLens")
             {                
                 oBotton.Click += new EventHandler(handlerObjectiveLenses_Click);
-                AddSubMenu(PanelNumObjectiveLenses, Item + "_" + numButtons.ToString());
+                AddSubMenu(PanelNumObjectiveLenses, Item + "_" + numButtons.ToString(), numButtons);
             }
 
             if (Item == "LightSheet")
@@ -787,7 +807,7 @@ namespace Presentation
             Font font = new Font(fontFamily, 12, FontStyle.Bold, GraphicsUnit.Pixel);
 
             LabelTitleSubmenu.Name = "Btn_" + numBtnSubMenu + "_" + numBtnSubMenu;
-            LabelTitleSubmenu.Text = Lbl_TitleSubMenu + " " + numBtnSubMenu;
+            LabelTitleSubmenu.Text = Lbl_TitleSubMenu;
             LabelTitleSubmenu.StateNormal.ShortText.Font = font;
             LabelTitleSubmenu.Palette = krypton;            
             LabelTitleSubmenu.StateNormal.ShortText.Color1 = Color.White;
@@ -808,9 +828,35 @@ namespace Presentation
 
             if (DatosSubMenu.ObjectiveAxis == 1)
             {
-                this.subMenu_ObjectiveLens_1.Controls.Clear();                
-                AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
-                AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+                if(IdBtnObjectiveAxis=="1")
+                {
+                    this.subMenu_ObjectiveLens_1.Controls.Clear();
+                    AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+                }
+
+                if (IdBtnObjectiveAxis == "2")
+                {
+                    this.subMenu_ObjectiveLens_2.Controls.Clear();
+                    AddBtnSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+                }
+
+                if (IdBtnObjectiveAxis == "3")
+                {
+                    this.subMenu_ObjectiveLens_3.Controls.Clear();
+                    AddBtnSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+                }
+
+                if (IdBtnObjectiveAxis == "4")
+                {
+                    this.subMenu_ObjectiveLens_1.Controls.Clear();
+                    AddBtnSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+                }
+
+
             }
             else
             {

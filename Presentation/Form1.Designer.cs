@@ -464,8 +464,7 @@
             this.Btn_Cameras.Dock = System.Windows.Forms.DockStyle.Top;
             this.Btn_Cameras.Location = new System.Drawing.Point(0, 166);
             this.Btn_Cameras.Name = "Btn_Cameras";
-            this.Btn_Cameras.Palette = this.krypton;
-            this.Btn_Cameras.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.Btn_Cameras.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
             this.Btn_Cameras.Size = new System.Drawing.Size(288, 43);
             this.Btn_Cameras.TabIndex = 1;
             this.Btn_Cameras.Tag = "";
@@ -497,6 +496,7 @@
             // 
             this.SplitContainer.Cursor = System.Windows.Forms.Cursors.Default;
             this.SplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SplitContainer.IsSplitterFixed = true;
             this.SplitContainer.Location = new System.Drawing.Point(319, 0);
             this.SplitContainer.Name = "SplitContainer";
             this.SplitContainer.Palette = this.krypton;
@@ -535,7 +535,7 @@
             this.SplitContainer.Panel2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.SplitContainer.Panel2.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderCalendar;
             this.SplitContainer.Size = new System.Drawing.Size(1193, 723);
-            this.SplitContainer.SplitterDistance = 184;
+            this.SplitContainer.SplitterDistance = 231;
             this.SplitContainer.TabIndex = 2;
             // 
             // PanelNumFilterWheels
@@ -546,7 +546,7 @@
             this.PanelNumFilterWheels.Name = "PanelNumFilterWheels";
             this.PanelNumFilterWheels.Palette = this.krypton;
             this.PanelNumFilterWheels.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNumFilterWheels.Size = new System.Drawing.Size(184, 0);
+            this.PanelNumFilterWheels.Size = new System.Drawing.Size(231, 0);
             this.PanelNumFilterWheels.TabIndex = 22;
             // 
             // kryptonBorderEdge6
@@ -557,7 +557,7 @@
             this.kryptonBorderEdge6.Name = "kryptonBorderEdge6";
             this.kryptonBorderEdge6.Palette = this.krypton;
             this.kryptonBorderEdge6.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonBorderEdge6.Size = new System.Drawing.Size(184, 1);
+            this.kryptonBorderEdge6.Size = new System.Drawing.Size(231, 1);
             this.kryptonBorderEdge6.Text = "kryptonBorderEdge6";
             // 
             // Lbl_NumFilterWheels
@@ -567,7 +567,7 @@
             this.Lbl_NumFilterWheels.Enabled = false;
             this.Lbl_NumFilterWheels.Location = new System.Drawing.Point(0, 155);
             this.Lbl_NumFilterWheels.Name = "Lbl_NumFilterWheels";
-            this.Lbl_NumFilterWheels.Size = new System.Drawing.Size(184, 30);
+            this.Lbl_NumFilterWheels.Size = new System.Drawing.Size(231, 30);
             this.Lbl_NumFilterWheels.StateNormal.Padding = new System.Windows.Forms.Padding(5, -1, -1, -1);
             this.Lbl_NumFilterWheels.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_NumFilterWheels.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -582,7 +582,7 @@
             this.PanelNumLasers.Name = "PanelNumLasers";
             this.PanelNumLasers.Palette = this.krypton;
             this.PanelNumLasers.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNumLasers.Size = new System.Drawing.Size(184, 0);
+            this.PanelNumLasers.Size = new System.Drawing.Size(231, 0);
             this.PanelNumLasers.TabIndex = 18;
             // 
             // kryptonBorderEdge5
@@ -593,7 +593,7 @@
             this.kryptonBorderEdge5.Name = "kryptonBorderEdge5";
             this.kryptonBorderEdge5.Palette = this.krypton;
             this.kryptonBorderEdge5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonBorderEdge5.Size = new System.Drawing.Size(184, 1);
+            this.kryptonBorderEdge5.Size = new System.Drawing.Size(231, 1);
             this.kryptonBorderEdge5.Text = "kryptonBorderEdge5";
             // 
             // Lbl_NumLasers
@@ -603,7 +603,7 @@
             this.Lbl_NumLasers.Enabled = false;
             this.Lbl_NumLasers.Location = new System.Drawing.Point(0, 124);
             this.Lbl_NumLasers.Name = "Lbl_NumLasers";
-            this.Lbl_NumLasers.Size = new System.Drawing.Size(184, 30);
+            this.Lbl_NumLasers.Size = new System.Drawing.Size(231, 30);
             this.Lbl_NumLasers.StateNormal.Padding = new System.Windows.Forms.Padding(5, -1, -1, -1);
             this.Lbl_NumLasers.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_NumLasers.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -618,7 +618,7 @@
             this.PanelNumLightSheets.Name = "PanelNumLightSheets";
             this.PanelNumLightSheets.Palette = this.krypton;
             this.PanelNumLightSheets.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNumLightSheets.Size = new System.Drawing.Size(184, 0);
+            this.PanelNumLightSheets.Size = new System.Drawing.Size(231, 0);
             this.PanelNumLightSheets.TabIndex = 14;
             // 
             // kryptonBorderEdge4
@@ -629,7 +629,7 @@
             this.kryptonBorderEdge4.Name = "kryptonBorderEdge4";
             this.kryptonBorderEdge4.Palette = this.krypton;
             this.kryptonBorderEdge4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonBorderEdge4.Size = new System.Drawing.Size(184, 1);
+            this.kryptonBorderEdge4.Size = new System.Drawing.Size(231, 1);
             this.kryptonBorderEdge4.Text = "kryptonBorderEdge4";
             // 
             // Lbl_NumLightSheets
@@ -639,7 +639,7 @@
             this.Lbl_NumLightSheets.Enabled = false;
             this.Lbl_NumLightSheets.Location = new System.Drawing.Point(0, 93);
             this.Lbl_NumLightSheets.Name = "Lbl_NumLightSheets";
-            this.Lbl_NumLightSheets.Size = new System.Drawing.Size(184, 30);
+            this.Lbl_NumLightSheets.Size = new System.Drawing.Size(231, 30);
             this.Lbl_NumLightSheets.StateNormal.Padding = new System.Windows.Forms.Padding(5, -1, -1, -1);
             this.Lbl_NumLightSheets.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_NumLightSheets.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -654,7 +654,7 @@
             this.PanelNumObjectiveLenses.Name = "PanelNumObjectiveLenses";
             this.PanelNumObjectiveLenses.Palette = this.krypton;
             this.PanelNumObjectiveLenses.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNumObjectiveLenses.Size = new System.Drawing.Size(184, 0);
+            this.PanelNumObjectiveLenses.Size = new System.Drawing.Size(231, 0);
             this.PanelNumObjectiveLenses.TabIndex = 10;
             // 
             // kryptonBorderEdge3
@@ -665,7 +665,7 @@
             this.kryptonBorderEdge3.Name = "kryptonBorderEdge3";
             this.kryptonBorderEdge3.Palette = this.krypton;
             this.kryptonBorderEdge3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonBorderEdge3.Size = new System.Drawing.Size(184, 1);
+            this.kryptonBorderEdge3.Size = new System.Drawing.Size(231, 1);
             this.kryptonBorderEdge3.Text = "kryptonBorderEdge3";
             // 
             // Lbl_NumObjectiveLenses
@@ -675,7 +675,7 @@
             this.Lbl_NumObjectiveLenses.Enabled = false;
             this.Lbl_NumObjectiveLenses.Location = new System.Drawing.Point(0, 62);
             this.Lbl_NumObjectiveLenses.Name = "Lbl_NumObjectiveLenses";
-            this.Lbl_NumObjectiveLenses.Size = new System.Drawing.Size(184, 30);
+            this.Lbl_NumObjectiveLenses.Size = new System.Drawing.Size(231, 30);
             this.Lbl_NumObjectiveLenses.StateNormal.Padding = new System.Windows.Forms.Padding(5, -1, -1, -1);
             this.Lbl_NumObjectiveLenses.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_NumObjectiveLenses.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -690,7 +690,7 @@
             this.PanelNumStageAxes.Name = "PanelNumStageAxes";
             this.PanelNumStageAxes.Palette = this.krypton;
             this.PanelNumStageAxes.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNumStageAxes.Size = new System.Drawing.Size(184, 0);
+            this.PanelNumStageAxes.Size = new System.Drawing.Size(231, 0);
             this.PanelNumStageAxes.TabIndex = 6;
             // 
             // kryptonBorderEdge2
@@ -701,7 +701,7 @@
             this.kryptonBorderEdge2.Name = "kryptonBorderEdge2";
             this.kryptonBorderEdge2.Palette = this.krypton;
             this.kryptonBorderEdge2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonBorderEdge2.Size = new System.Drawing.Size(184, 1);
+            this.kryptonBorderEdge2.Size = new System.Drawing.Size(231, 1);
             this.kryptonBorderEdge2.Text = "kryptonBorderEdge2";
             // 
             // Lbl_NumStageAxes
@@ -711,7 +711,7 @@
             this.Lbl_NumStageAxes.Enabled = false;
             this.Lbl_NumStageAxes.Location = new System.Drawing.Point(0, 31);
             this.Lbl_NumStageAxes.Name = "Lbl_NumStageAxes";
-            this.Lbl_NumStageAxes.Size = new System.Drawing.Size(184, 30);
+            this.Lbl_NumStageAxes.Size = new System.Drawing.Size(231, 30);
             this.Lbl_NumStageAxes.StateNormal.Padding = new System.Windows.Forms.Padding(5, -1, -1, -1);
             this.Lbl_NumStageAxes.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_NumStageAxes.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -726,7 +726,7 @@
             this.PanelNumCameras.Name = "PanelNumCameras";
             this.PanelNumCameras.Palette = this.krypton;
             this.PanelNumCameras.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNumCameras.Size = new System.Drawing.Size(184, 0);
+            this.PanelNumCameras.Size = new System.Drawing.Size(231, 0);
             this.PanelNumCameras.TabIndex = 2;
             // 
             // kryptonBorderEdge1
@@ -737,7 +737,7 @@
             this.kryptonBorderEdge1.Name = "kryptonBorderEdge1";
             this.kryptonBorderEdge1.Palette = this.krypton;
             this.kryptonBorderEdge1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonBorderEdge1.Size = new System.Drawing.Size(184, 1);
+            this.kryptonBorderEdge1.Size = new System.Drawing.Size(231, 1);
             this.kryptonBorderEdge1.Text = "kryptonBorderEdge1";
             // 
             // Lbl_NumCameras
@@ -747,7 +747,7 @@
             this.Lbl_NumCameras.Enabled = false;
             this.Lbl_NumCameras.Location = new System.Drawing.Point(0, 0);
             this.Lbl_NumCameras.Name = "Lbl_NumCameras";
-            this.Lbl_NumCameras.Size = new System.Drawing.Size(184, 30);
+            this.Lbl_NumCameras.Size = new System.Drawing.Size(231, 30);
             this.Lbl_NumCameras.StateNormal.Padding = new System.Windows.Forms.Padding(5, -1, -1, -1);
             this.Lbl_NumCameras.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_NumCameras.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -761,7 +761,7 @@
             this.PanelNext.Name = "PanelNext";
             this.PanelNext.Palette = this.krypton;
             this.PanelNext.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.PanelNext.Size = new System.Drawing.Size(1004, 83);
+            this.PanelNext.Size = new System.Drawing.Size(957, 83);
             this.PanelNext.TabIndex = 2;
             // 
             // PanelViews
@@ -773,7 +773,7 @@
             this.PanelViews.Palette = this.krypton;
             this.PanelViews.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.PanelViews.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderDockInactive;
-            this.PanelViews.Size = new System.Drawing.Size(1004, 640);
+            this.PanelViews.Size = new System.Drawing.Size(957, 640);
             this.PanelViews.TabIndex = 1;
             // 
             // Form1
