@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Presentation.Views.SubMenu
 {
-    public partial class FormLightsheetAxes : Form
+    public partial class FormLightSheetAxes : Form
     {
-        public FormLightsheetAxes()
+        public FormLightSheetAxes(string IdSubMenuLightSheetAxes)
         {
             InitializeComponent();
+        }
+
+        private void FormLightSheetAxes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

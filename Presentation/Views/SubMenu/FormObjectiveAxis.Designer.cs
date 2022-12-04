@@ -94,8 +94,8 @@
             // 
             // TxtBx_StepsObjectiveAxis_5
             // 
-            this.TxtBx_StepsObjectiveAxis_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_StepsObjectiveAxis_5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_StepsObjectiveAxis_5.Location = new System.Drawing.Point(652, 263);
             this.TxtBx_StepsObjectiveAxis_5.Name = "TxtBx_StepsObjectiveAxis_5";
@@ -104,8 +104,8 @@
             // 
             // TxtBx_StepsObjectiveAxis_4
             // 
-            this.TxtBx_StepsObjectiveAxis_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_StepsObjectiveAxis_4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_StepsObjectiveAxis_4.Location = new System.Drawing.Point(580, 263);
             this.TxtBx_StepsObjectiveAxis_4.Name = "TxtBx_StepsObjectiveAxis_4";
@@ -114,8 +114,8 @@
             // 
             // TxtBx_StepsObjectiveAxis_3
             // 
-            this.TxtBx_StepsObjectiveAxis_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_StepsObjectiveAxis_3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_StepsObjectiveAxis_3.Location = new System.Drawing.Point(508, 263);
             this.TxtBx_StepsObjectiveAxis_3.Name = "TxtBx_StepsObjectiveAxis_3";
@@ -124,8 +124,8 @@
             // 
             // TxtBx_StepsObjectiveAxis_2
             // 
-            this.TxtBx_StepsObjectiveAxis_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_StepsObjectiveAxis_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_StepsObjectiveAxis_2.Location = new System.Drawing.Point(436, 263);
             this.TxtBx_StepsObjectiveAxis_2.Name = "TxtBx_StepsObjectiveAxis_2";
@@ -134,8 +134,8 @@
             // 
             // TxtBx_WorkPositionObjectiveAxis
             // 
-            this.TxtBx_WorkPositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_WorkPositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_WorkPositionObjectiveAxis.Location = new System.Drawing.Point(364, 461);
             this.TxtBx_WorkPositionObjectiveAxis.Name = "TxtBx_WorkPositionObjectiveAxis";
@@ -144,8 +144,8 @@
             // 
             // TxtBx_HomePositionObjectiveAxis
             // 
-            this.TxtBx_HomePositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_HomePositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_HomePositionObjectiveAxis.Location = new System.Drawing.Point(364, 428);
             this.TxtBx_HomePositionObjectiveAxis.Name = "TxtBx_HomePositionObjectiveAxis";
@@ -154,8 +154,8 @@
             // 
             // TxtBx_SoftwareLimitMaxObjectiveAxis
             // 
-            this.TxtBx_SoftwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_SoftwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_SoftwareLimitMaxObjectiveAxis.Location = new System.Drawing.Point(364, 395);
             this.TxtBx_SoftwareLimitMaxObjectiveAxis.Name = "TxtBx_SoftwareLimitMaxObjectiveAxis";
@@ -164,8 +164,8 @@
             // 
             // TxtBx_SoftwareLimitMinObjectiveAxis
             // 
-            this.TxtBx_SoftwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_SoftwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_SoftwareLimitMinObjectiveAxis.Location = new System.Drawing.Point(364, 362);
             this.TxtBx_SoftwareLimitMinObjectiveAxis.Name = "TxtBx_SoftwareLimitMinObjectiveAxis";
@@ -174,8 +174,8 @@
             // 
             // TxtBx_HardwareLimitMaxObjectiveAxis
             // 
-            this.TxtBx_HardwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_HardwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_HardwareLimitMaxObjectiveAxis.Location = new System.Drawing.Point(364, 329);
             this.TxtBx_HardwareLimitMaxObjectiveAxis.Name = "TxtBx_HardwareLimitMaxObjectiveAxis";
@@ -184,8 +184,8 @@
             // 
             // TxtBx_HardwareLimitMinObjectiveAxis
             // 
-            this.TxtBx_HardwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_HardwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_HardwareLimitMinObjectiveAxis.Location = new System.Drawing.Point(364, 296);
             this.TxtBx_HardwareLimitMinObjectiveAxis.Name = "TxtBx_HardwareLimitMinObjectiveAxis";
@@ -194,8 +194,8 @@
             // 
             // TxtBx_InvertedObjectiveAxis
             // 
-            this.TxtBx_InvertedObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_InvertedObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_InvertedObjectiveAxis.Location = new System.Drawing.Point(364, 230);
             this.TxtBx_InvertedObjectiveAxis.Name = "TxtBx_InvertedObjectiveAxis";
@@ -204,8 +204,8 @@
             // 
             // TxtBx_StepsObjectiveAxis_1
             // 
-            this.TxtBx_StepsObjectiveAxis_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_StepsObjectiveAxis_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_StepsObjectiveAxis_1.Location = new System.Drawing.Point(364, 263);
             this.TxtBx_StepsObjectiveAxis_1.Name = "TxtBx_StepsObjectiveAxis_1";
@@ -214,8 +214,8 @@
             // 
             // TxtBx_TypeObjectiveAxis
             // 
-            this.TxtBx_TypeObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_TypeObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_TypeObjectiveAxis.Location = new System.Drawing.Point(364, 197);
             this.TxtBx_TypeObjectiveAxis.Name = "TxtBx_TypeObjectiveAxis";
@@ -224,8 +224,8 @@
             // 
             // TxtBx_NameObjectiveAxis
             // 
-            this.TxtBx_NameObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtBx_NameObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TxtBx_NameObjectiveAxis.Location = new System.Drawing.Point(364, 163);
             this.TxtBx_NameObjectiveAxis.Name = "TxtBx_NameObjectiveAxis";
@@ -234,8 +234,8 @@
             // 
             // Lbl_WorkPositionObjectiveAxis
             // 
-            this.Lbl_WorkPositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_WorkPositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_WorkPositionObjectiveAxis.Location = new System.Drawing.Point(50, 469);
             this.Lbl_WorkPositionObjectiveAxis.Name = "Lbl_WorkPositionObjectiveAxis";
@@ -247,8 +247,8 @@
             // 
             // Lbl_HomePositionObjectiveAxis
             // 
-            this.Lbl_HomePositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_HomePositionObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_HomePositionObjectiveAxis.Location = new System.Drawing.Point(50, 435);
             this.Lbl_HomePositionObjectiveAxis.Name = "Lbl_HomePositionObjectiveAxis";
@@ -260,8 +260,8 @@
             // 
             // Lbl_SoftwareLimitMaxObjectiveAxis
             // 
-            this.Lbl_SoftwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_SoftwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_SoftwareLimitMaxObjectiveAxis.Location = new System.Drawing.Point(50, 401);
             this.Lbl_SoftwareLimitMaxObjectiveAxis.Name = "Lbl_SoftwareLimitMaxObjectiveAxis";
@@ -273,8 +273,8 @@
             // 
             // Llb_SoftwareLimitMinObjectiveAxis
             // 
-            this.Llb_SoftwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Llb_SoftwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Llb_SoftwareLimitMinObjectiveAxis.Location = new System.Drawing.Point(50, 367);
             this.Llb_SoftwareLimitMinObjectiveAxis.Name = "Llb_SoftwareLimitMinObjectiveAxis";
@@ -286,8 +286,8 @@
             // 
             // Lbl_HardwareLimitMaxObjectiveAxis
             // 
-            this.Lbl_HardwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_HardwareLimitMaxObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_HardwareLimitMaxObjectiveAxis.Location = new System.Drawing.Point(50, 333);
             this.Lbl_HardwareLimitMaxObjectiveAxis.Name = "Lbl_HardwareLimitMaxObjectiveAxis";
@@ -299,8 +299,8 @@
             // 
             // Lbl_HardwareLimitMinObjectiveAxis
             // 
-            this.Lbl_HardwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_HardwareLimitMinObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_HardwareLimitMinObjectiveAxis.Location = new System.Drawing.Point(50, 299);
             this.Lbl_HardwareLimitMinObjectiveAxis.Name = "Lbl_HardwareLimitMinObjectiveAxis";
@@ -312,8 +312,8 @@
             // 
             // Lbl_StepsObjectiveAxis
             // 
-            this.Lbl_StepsObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_StepsObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_StepsObjectiveAxis.Location = new System.Drawing.Point(50, 265);
             this.Lbl_StepsObjectiveAxis.Name = "Lbl_StepsObjectiveAxis";
@@ -325,8 +325,8 @@
             // 
             // Lbl_InvertedObjectiveAxis
             // 
-            this.Lbl_InvertedObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_InvertedObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_InvertedObjectiveAxis.Location = new System.Drawing.Point(50, 231);
             this.Lbl_InvertedObjectiveAxis.Name = "Lbl_InvertedObjectiveAxis";
@@ -338,8 +338,8 @@
             // 
             // Lbl_TypeObjectiveAxis
             // 
-            this.Lbl_TypeObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_TypeObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_TypeObjectiveAxis.Location = new System.Drawing.Point(50, 197);
             this.Lbl_TypeObjectiveAxis.Name = "Lbl_TypeObjectiveAxis";
@@ -351,8 +351,8 @@
             // 
             // Lbl_NameObjectiveAxis
             // 
-            this.Lbl_NameObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_NameObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_NameObjectiveAxis.Location = new System.Drawing.Point(50, 163);
             this.Lbl_NameObjectiveAxis.Name = "Lbl_NameObjectiveAxis";
@@ -364,7 +364,7 @@
             // 
             // Lbl_TitleObjectiveAxis
             // 
-            this.Lbl_TitleObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Lbl_TitleObjectiveAxis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_TitleObjectiveAxis.Location = new System.Drawing.Point(352, 40);
             this.Lbl_TitleObjectiveAxis.Name = "Lbl_TitleObjectiveAxis";

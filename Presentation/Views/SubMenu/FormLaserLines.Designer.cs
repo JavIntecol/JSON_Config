@@ -282,6 +282,7 @@
             this.Controls.Add(this.PanelControlStageAxes);
             this.Name = "FormLaserLines";
             this.Text = "FormLaserLines";
+            this.Load += new System.EventHandler(this.FormLaserLines_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PanelControlStageAxes)).EndInit();
             this.PanelControlStageAxes.ResumeLayout(false);
             this.PanelControlStageAxes.PerformLayout();

@@ -493,6 +493,26 @@ namespace Presentation
 
             PanelSubmenu.Controls.Add(BottonSubMenu);
 
+            if (nameSubMenu == "ObjectiveAxis")
+            {
+                BottonSubMenu.Click += new EventHandler(handlerSubMenuObjectiveAxis_Click);
+            }
+
+            if (nameSubMenu == "LightSheetAxes")
+            {
+                BottonSubMenu.Click += new EventHandler(handlerSubMenuLightSheetAxes_Click);
+            }
+
+            if (nameSubMenu == "Laser")
+            {
+                BottonSubMenu.Click += new EventHandler(handlerSubMenuLaserLines_Click);
+            }
+
+            if (nameSubMenu == "FilterWheel")
+            {
+                BottonSubMenu.Click += new EventHandler(handlerSubMenuFilters_Click);
+            }
+
             //AddTab(PanelSubmenu, nameSubMenu);
         }
 
@@ -992,7 +1012,7 @@ namespace Presentation
                 if (IdBtnObjectiveAxis == "1")
                 {
                     this.subMenu_ObjectiveLens_1.Controls.Clear();
-                    numSubBttons(subMenu_ObjectiveLens_1, "ObjectiveAxis", numBtns);                    
+                    numSubBttons(subMenu_ObjectiveLens_1, "ObjectiveAxis", numBtns);
                     //AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
@@ -1037,31 +1057,30 @@ namespace Presentation
             if (IdBtnLightSheet == "1")
             {
                 this.subMenu_LightSheet_1.Controls.Clear();
-                numSubBttons(subMenu_LightSheet_1, "LightsheetAxes", numBtns);
+                numSubBttons(subMenu_LightSheet_1, "LightSheetAxes", numBtns);
                 //AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
             }
 
             if (IdBtnLightSheet == "2")
             {
                 this.subMenu_LightSheet_2.Controls.Clear();
-                numSubBttons(subMenu_LightSheet_2, "LightsheetAxes", numBtns);
+                numSubBttons(subMenu_LightSheet_2, "LightSheetAxes", numBtns);
                 //AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
             }
 
             if (IdBtnLightSheet == "3")
             {
                 this.subMenu_LightSheet_3.Controls.Clear();
-                numSubBttons(subMenu_LightSheet_3, "LightsheetAxes", numBtns);
+                numSubBttons(subMenu_LightSheet_3, "LightSheetAxes", numBtns);
                 //AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
             }
 
             if (IdBtnLightSheet == "4")
             {
                 this.subMenu_LightSheet_4.Controls.Clear();
-                numSubBttons(subMenu_LightSheet_4, "LightsheetAxes", numBtns);
+                numSubBttons(subMenu_LightSheet_4, "LightSheetAxes", numBtns);
                 //AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
             }
-
 
 
         }
@@ -1152,6 +1171,9 @@ namespace Presentation
         #region Handlers SubMenus
 
         Form newObjectiveAxis = null;
+        Form newLightSheetAxes = null;
+        Form newLaserLines = null;
+        Form newFilters = null;
         private void handlerSubMenuObjectiveAxis_Click(object sender, EventArgs e)
         {
 
@@ -1160,6 +1182,39 @@ namespace Presentation
 
             newObjectiveAxis = new FormObjectiveAxis(IdBtnSubMenuObjectiveAxis);
             openChildForm(newObjectiveAxis, sender);
+
+        }
+
+        private void handlerSubMenuLightSheetAxes_Click(object sender, EventArgs e)
+        {
+
+            KryptonButton repBtnSubMenuLightSheetAxes = sender as KryptonButton;
+            string IdBtnSubMenuLightSheetAxes = repBtnSubMenuLightSheetAxes.Text;
+
+            newLightSheetAxes = new FormLightSheetAxes(IdBtnSubMenuLightSheetAxes);
+            openChildForm(newLightSheetAxes, sender);
+
+        }
+
+        private void handlerSubMenuLaserLines_Click(object sender, EventArgs e)
+        {
+
+            KryptonButton repBtnSubMenuLaserLines = sender as KryptonButton;
+            string IdBtnSubMenuLaserLines = repBtnSubMenuLaserLines.Text;
+
+            newLaserLines = new FormLaserLines(IdBtnSubMenuLaserLines);
+            openChildForm(newLaserLines, sender);
+
+        }
+
+        private void handlerSubMenuFilters_Click(object sender, EventArgs e)
+        {
+
+            KryptonButton repBtnSubMenuFilters = sender as KryptonButton;
+            string IdBtnSubMenuFilters = repBtnSubMenuFilters.Text;
+
+            newFilters = new FormFilters(IdBtnSubMenuFilters);
+            openChildForm(newFilters, sender);
 
         }
 

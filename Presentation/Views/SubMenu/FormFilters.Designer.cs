@@ -176,6 +176,7 @@
             this.Controls.Add(this.PanelControlStageAxes);
             this.Name = "FormFilters";
             this.Text = "FormFilters";
+            this.Load += new System.EventHandler(this.FormFilters_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PanelControlStageAxes)).EndInit();
             this.PanelControlStageAxes.ResumeLayout(false);
             this.PanelControlStageAxes.PerformLayout();

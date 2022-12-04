@@ -12,9 +12,14 @@ namespace Presentation.Views.SubMenu
 {
     public partial class FormFilters : Form
     {
-        public FormFilters()
+        public FormFilters(string IdSubMenuFilters)
         {
             InitializeComponent();
+        }
+
+        private void FormFilters_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

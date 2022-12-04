@@ -1,6 +1,6 @@
 ﻿namespace Presentation.Views.SubMenu
 {
-    partial class FormLightsheetAxes
+    partial class FormLightSheetAxes
     {
         /// <summary>
         /// Required designer variable.
@@ -341,22 +341,23 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Lbl_TitleLightsheetAxes.Location = new System.Drawing.Point(352, 40);
             this.Lbl_TitleLightsheetAxes.Name = "Lbl_TitleLightsheetAxes";
-            this.Lbl_TitleLightsheetAxes.Size = new System.Drawing.Size(290, 49);
+            this.Lbl_TitleLightsheetAxes.Size = new System.Drawing.Size(297, 49);
             this.Lbl_TitleLightsheetAxes.StateNormal.ShortText.Color1 = System.Drawing.Color.White;
             this.Lbl_TitleLightsheetAxes.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_TitleLightsheetAxes.StateNormal.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.Lbl_TitleLightsheetAxes.StateNormal.ShortText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.Lbl_TitleLightsheetAxes.TabIndex = 1;
-            this.Lbl_TitleLightsheetAxes.Values.Text = "LightsheetAxes";
+            this.Lbl_TitleLightsheetAxes.Values.Text = "LightSheetAxes";
             // 
-            // FormLightsheetAxes
+            // FormLightSheetAxes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(946, 553);
             this.Controls.Add(this.PanelControlStageAxes);
-            this.Name = "FormLightsheetAxes";
+            this.Name = "FormLightSheetAxes";
             this.Text = "FormLightsheetAxes";
+            this.Load += new System.EventHandler(this.FormLightSheetAxes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PanelControlStageAxes)).EndInit();
             this.PanelControlStageAxes.ResumeLayout(false);
             this.PanelControlStageAxes.PerformLayout();

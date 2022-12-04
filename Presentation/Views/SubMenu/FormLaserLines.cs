@@ -12,9 +12,14 @@ namespace Presentation.Views.SubMenu
 {
     public partial class FormLaserLines : Form
     {
-        public FormLaserLines()
+        public FormLaserLines(string IdSubMenuLaserLines)
         {
             InitializeComponent();
+        }
+
+        private void FormLaserLines_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
