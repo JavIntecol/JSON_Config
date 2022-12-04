@@ -16,6 +16,25 @@ namespace Presentation.Views
         {
             InitializeComponent();
             Lbl_TitleLasers.Text = title;
+
+            for (int i = 1; i <= 100; i++)
+            {
+                CmbBx_LasersLaserLines.Items.Add(i);
+
+            }
+        }
+
+        private void FormLasers_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public int indiceLaser;
+        private void CmbBx_LasersLaserLines_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            indiceLaser = CmbBx_LasersLaserLines.SelectedIndex;
+
+            DatosSubMenu.Laser = indiceLaser;
         }
     }
 }

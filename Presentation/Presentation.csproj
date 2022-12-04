@@ -102,6 +102,24 @@
     <Compile Include="Views\FormStageAxes.Designer.cs">
       <DependentUpon>FormStageAxes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SubMenu\FormFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenu\FormFilters.Designer.cs">
+      <DependentUpon>FormFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubMenu\FormLaserLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenu\FormLaserLines.Designer.cs">
+      <DependentUpon>FormLaserLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubMenu\FormLightsheetAxes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubMenu\FormLightsheetAxes.Designer.cs">
+      <DependentUpon>FormLightsheetAxes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SubMenu\FormObjectiveAxis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +155,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormStageAxes.resx">
       <DependentUpon>FormStageAxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenu\FormFilters.resx">
+      <DependentUpon>FormFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenu\FormLaserLines.resx">
+      <DependentUpon>FormLaserLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubMenu\FormLightsheetAxes.resx">
+      <DependentUpon>FormLightsheetAxes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SubMenu\FormObjectiveAxis.resx">
       <DependentUpon>FormObjectiveAxis.cs</DependentUpon>

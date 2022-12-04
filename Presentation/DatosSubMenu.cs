@@ -10,5 +10,8 @@ namespace Presentation
     {
         // ObjectiveLenses
         static public int ObjectiveAxis;
+        static public int LightSheets;
+        static public int Laser;
+        static public int FilterWheel;
     }
 }

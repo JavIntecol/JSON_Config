@@ -45,11 +45,30 @@ namespace Presentation
             CmbBx_FilterWheels.Items.Add(2);
             CmbBx_FilterWheels.Items.Add(3);
             CmbBx_FilterWheels.Items.Add(4);
+
+
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            KryptonLabel TitleTreeVeiw = new KryptonLabel();
 
+            FontFamily fontTittleTreeView = new FontFamily("Microsoft Sans Serif");
+            Font font = new Font(fontTittleTreeView, 25, FontStyle.Bold, GraphicsUnit.Pixel);
+
+
+            TitleTreeVeiw.Name = "Lbl_TittleTreeView";
+            TitleTreeVeiw.Text = "Tree View";
+            TitleTreeVeiw.AutoSize = true;
+            TitleTreeVeiw.StateNormal.ShortText.Font = font;
+            TitleTreeVeiw.Palette = krypton;
+
+            TitleTreeVeiw.StateNormal.ShortText.Color1 = Color.White;
+            TitleTreeVeiw.Dock = System.Windows.Forms.DockStyle.Top;
+
+            SplitContainer.Panel1.Controls.Add(TitleTreeVeiw);
         }
 
         private void CustomizeDesing()
@@ -285,25 +304,99 @@ namespace Presentation
             subMenu.Dock = System.Windows.Forms.DockStyle.Top;
             subMenu.AutoSize = true;
 
-            if (idSubMenu ==1)
+            if (Item == "ObjectiveLens_1" || Item == "ObjectiveLens_2" || Item == "ObjectiveLens_3" || Item == "ObjectiveLens_4")
             {
-                subMenu_ObjectiveLens_1 = subMenu;
+                if (idSubMenu == 1)
+                {
+                    subMenu_ObjectiveLens_1 = subMenu;
+                }
+
+                if (idSubMenu == 2)
+                {
+                    subMenu_ObjectiveLens_2 = subMenu;
+                }
+
+                if (idSubMenu == 3)
+                {
+                    subMenu_ObjectiveLens_3 = subMenu;
+                }
+
+                if (idSubMenu == 4)
+                {
+                    subMenu_ObjectiveLens_4 = subMenu;
+                }
             }
 
-            if (idSubMenu == 2)
+            if (Item == "LightSheet_1" || Item == "LightSheet_2" || Item == "LightSheet_3" || Item == "LightSheet_4")
             {
-                subMenu_ObjectiveLens_2 = subMenu;
+                if (idSubMenu == 1)
+                {
+                    subMenu_LightSheet_1 = subMenu;
+                }
+
+                if (idSubMenu == 2)
+                {
+                    subMenu_LightSheet_2 = subMenu;
+                }
+
+                if (idSubMenu == 3)
+                {
+                    subMenu_LightSheet_3 = subMenu;
+                }
+
+                if (idSubMenu == 4)
+                {
+                    subMenu_LightSheet_4 = subMenu;
+                }
             }
 
-            if (idSubMenu == 3)
+            if (Item == "Laser_1" || Item == "Laser_2" || Item == "Laser_3" || Item == "Laser_4")
             {
-                subMenu_ObjectiveLens_3 = subMenu;
+                if (idSubMenu == 1)
+                {
+                    subMenu_Laser_1 = subMenu;
+                }
+
+                if (idSubMenu == 2)
+                {
+                    subMenu_Laser_2 = subMenu;
+                }
+
+                if (idSubMenu == 3)
+                {
+                    subMenu_Laser_3 = subMenu;
+                }
+
+                if (idSubMenu == 4)
+                {
+                    subMenu_Laser_4 = subMenu;
+                }
             }
 
-            if (idSubMenu == 4)
+            if (Item == "FilterWheel_1" || Item == "FilterWheel_2" || Item == "FilterWheel_3" || Item == "FilterWheel_4")
             {
-                subMenu_ObjectiveLens_4 = subMenu;
+                if (idSubMenu == 1)
+                {
+                    subMenu_FilterWheel_1 = subMenu;
+                }
+
+                if (idSubMenu == 2)
+                {
+                    subMenu_FilterWheel_2 = subMenu;
+                }
+
+                if (idSubMenu == 3)
+                {
+                    subMenu_FilterWheel_3 = subMenu;
+                }
+
+                if (idSubMenu == 4)
+                {
+                    subMenu_FilterWheel_4 = subMenu;
+                }
             }
+
+
 
 
 
@@ -312,15 +405,24 @@ namespace Presentation
             //return subMenu;
         }
 
-        
+
 
         public void AddBotton(KryptonPanel ItemPanel, String Item, int numButtons)
         {
             KryptonButton oBotton = new KryptonButton();
 
+            FontFamily fontFamilyBtn = new FontFamily("Microsoft Sans Serif");
+            Font fontBtn = new Font(fontFamilyBtn, 13, FontStyle.Bold, GraphicsUnit.Pixel);
+
+
+
             oBotton.Name = "Btn_" + Item + "_" + numButtons.ToString();
             oBotton.Text = Item;
             oBotton.Values.ExtraText = numButtons.ToString();
+            oBotton.StateCommon.Content.ShortText.Font = fontBtn;
+            oBotton.StateCommon.Content.LongText.Font = fontBtn;
+            oBotton.AutoSize = true;
+
             oBotton.Palette = krypton;
             oBotton.Dock = System.Windows.Forms.DockStyle.Top;
 
@@ -340,19 +442,29 @@ namespace Presentation
                 oBotton.Click += new EventHandler(handlerStageAxes_Click);
 
             if (Item == "ObjectiveLens")
-            {                
+            {
                 oBotton.Click += new EventHandler(handlerObjectiveLenses_Click);
                 AddSubMenu(PanelNumObjectiveLenses, Item + "_" + numButtons.ToString(), numButtons);
             }
 
             if (Item == "LightSheet")
+            {
                 oBotton.Click += new EventHandler(handlerLightSheets_Click);
+                AddSubMenu(PanelNumLightSheets, Item + "_" + numButtons.ToString(), numButtons);
+            }
 
             if (Item == "Laser")
+            {
                 oBotton.Click += new EventHandler(handlerLasers_Click);
+                AddSubMenu(PanelNumLasers, Item + "_" + numButtons.ToString(), numButtons);
+            }
 
             if (Item == "FilterWheel")
+            {
                 oBotton.Click += new EventHandler(handlerFilterWheels_Click);
+                AddSubMenu(PanelNumFilterWheels, Item + "_" + numButtons.ToString(), numButtons);
+            }
+
 
             ItemPanel.Controls.Add(oBotton);
 
@@ -363,6 +475,9 @@ namespace Presentation
             int numBtnSubmenu = DatosSubMenu.ObjectiveAxis;
 
             KryptonButton BottonSubMenu = new KryptonButton();
+
+            FontFamily fontFamily = new FontFamily("Microsoft Sans Serif");
+            Font font = new Font(fontFamily, 12, FontStyle.Bold, GraphicsUnit.Pixel);
 
             BottonSubMenu.Name = "Btn_" + nameSubMenu + "_" + numButton;
             BottonSubMenu.Text = nameSubMenu + " " + numButton;
@@ -378,16 +493,16 @@ namespace Presentation
 
             PanelSubmenu.Controls.Add(BottonSubMenu);
 
-            AddTab(PanelSubmenu, nameSubMenu);
+            //AddTab(PanelSubmenu, nameSubMenu);
         }
 
-        public void AddBtnNext(String Item, string IdBtn)
+        public void AddBtnNext(String Item, string IdBtn, string IdBtnSender)
         {
             this.PanelNext.Controls.Clear();
 
             KryptonButton BottonNext = new KryptonButton();
 
-            BottonNext.Name = "Btn_Next" + Item;
+            BottonNext.Name = "Btn_Next" + Item + IdBtnSender;
             BottonNext.Text = "Next";
             BottonNext.Tag = IdBtn;
             BottonNext.Palette = krypton;
@@ -397,9 +512,30 @@ namespace Presentation
 
             if (Item == "ObjectiveLens")
             {
-                
+
                 BottonNext.Click += new EventHandler(handlerObjectiveAxis_Click);
-                
+
+            }
+
+            if (Item == "LightSheet")
+            {
+
+                BottonNext.Click += new EventHandler(handlerLightSheet_Click);
+
+            }
+
+            if (Item == "Laser")
+            {
+
+                BottonNext.Click += new EventHandler(handlerLaser_Click);
+
+            }
+
+            if (Item == "FilterWheel")
+            {
+
+                BottonNext.Click += new EventHandler(handlerFilterWheel_Click);
+
             }
 
             PanelNext.Controls.Add(BottonNext);
@@ -415,13 +551,13 @@ namespace Presentation
         private void handlerCameras_Click(object sender, EventArgs e)
         {
             KryptonButton repBtnCamera = sender as KryptonButton;
-            string IdBtnCamera = repBtnCamera.Text;
+            string IdBtnCamera = repBtnCamera.Values.ExtraText;
 
-            if (IdBtnCamera == "Camera 1")
+            if (IdBtnCamera == "1")
             {
                 if (FormCamera_1 == null)
                 {
-                    FormCamera_1 = new FormCameras(IdBtnCamera);
+                    FormCamera_1 = new FormCameras("Camera " + IdBtnCamera);
                     openChildForm(FormCamera_1, sender);
 
 
@@ -432,11 +568,11 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnCamera == "Camera 2")
+            if (IdBtnCamera == "2")
             {
                 if (FormCamera_2 == null)
                 {
-                    FormCamera_2 = new FormCameras(IdBtnCamera);
+                    FormCamera_2 = new FormCameras("Camera " + IdBtnCamera);
                     openChildForm(FormCamera_2, sender);
                 }
                 else
@@ -445,11 +581,11 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnCamera == "Camera 3")
+            if (IdBtnCamera == "3")
             {
                 if (FormCamera_3 == null)
                 {
-                    FormCamera_3 = new FormCameras(IdBtnCamera);
+                    FormCamera_3 = new FormCameras("Camera " + IdBtnCamera);
                     openChildForm(FormCamera_3, sender);
                 }
                 else
@@ -458,11 +594,11 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnCamera == "Camera 4")
+            if (IdBtnCamera == "4")
             {
                 if (FormCamera_4 == null)
                 {
-                    FormCamera_4 = new FormCameras(IdBtnCamera);
+                    FormCamera_4 = new FormCameras("Camera " + IdBtnCamera);
                     openChildForm(FormCamera_4, sender);
                 }
                 else
@@ -471,7 +607,7 @@ namespace Presentation
                 }
             }
 
-            AddBtnNext("Camera", "0");
+            AddBtnNext("Camera", "0", "0");
 
         }
 
@@ -482,13 +618,13 @@ namespace Presentation
         private void handlerStageAxes_Click(object sender, EventArgs e)
         {
             KryptonButton repBtnStageAxes = sender as KryptonButton;
-            string IdBtnStageAxes = repBtnStageAxes.Text;
+            string IdBtnStageAxes = repBtnStageAxes.Values.ExtraText;
 
-            if (IdBtnStageAxes == "StageAxis 1")
+            if (IdBtnStageAxes == "1")
             {
                 if (FormStageAxis_1 == null)
                 {
-                    FormStageAxis_1 = new FormStageAxes(IdBtnStageAxes);
+                    FormStageAxis_1 = new FormStageAxes("StageAxes " + IdBtnStageAxes);
                     openChildForm(FormStageAxis_1, sender);
                 }
                 else
@@ -497,11 +633,11 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnStageAxes == "StageAxis 2")
+            if (IdBtnStageAxes == "2")
             {
                 if (FormStageAxis_2 == null)
                 {
-                    FormStageAxis_2 = new FormStageAxes(IdBtnStageAxes);
+                    FormStageAxis_2 = new FormStageAxes("StageAxes " + IdBtnStageAxes);
                     openChildForm(FormStageAxis_2, sender);
                 }
                 else
@@ -510,11 +646,11 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnStageAxes == "StageAxis 3")
+            if (IdBtnStageAxes == "3")
             {
                 if (FormStageAxis_3 == null)
                 {
-                    FormStageAxis_3 = new FormStageAxes(IdBtnStageAxes);
+                    FormStageAxis_3 = new FormStageAxes("StageAxes " + IdBtnStageAxes);
                     openChildForm(FormStageAxis_3, sender);
                 }
                 else
@@ -523,11 +659,11 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnStageAxes == "StageAxis 4")
+            if (IdBtnStageAxes == "4")
             {
                 if (FormStageAxis_4 == null)
                 {
-                    FormStageAxis_4 = new FormStageAxes(IdBtnStageAxes);
+                    FormStageAxis_4 = new FormStageAxes("StageAxes " + IdBtnStageAxes);
                     openChildForm(FormStageAxis_4, sender);
                 }
                 else
@@ -545,7 +681,7 @@ namespace Presentation
         private Form FormObjectiveLens_4 = null;
         private void handlerObjectiveLenses_Click(object sender, EventArgs e)
         {
-            KryptonButton repBtnObjectiveLens = sender as KryptonButton;            
+            KryptonButton repBtnObjectiveLens = sender as KryptonButton;
             string IdBtnObjectiveLens = repBtnObjectiveLens.Values.ExtraText;
             string NameBtnObjectiveLens = repBtnObjectiveLens.Text + " " + IdBtnObjectiveLens;
 
@@ -555,7 +691,7 @@ namespace Presentation
                 {
                     FormObjectiveLens_1 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_1, sender);
-                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens, "1");
                 }
                 else
                 {
@@ -569,7 +705,7 @@ namespace Presentation
                 {
                     FormObjectiveLens_2 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_2, sender);
-                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens, "2");
                 }
                 else
                 {
@@ -583,7 +719,7 @@ namespace Presentation
                 {
                     FormObjectiveLens_3 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_3, sender);
-                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens, "3");
                 }
                 else
                 {
@@ -597,7 +733,7 @@ namespace Presentation
                 {
                     FormObjectiveLens_4 = new FormObjectiveLenses(NameBtnObjectiveLens);
                     openChildForm(FormObjectiveLens_4, sender);
-                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens);
+                    AddBtnNext("ObjectiveLens", IdBtnObjectiveLens, "4");
                 }
                 else
                 {
@@ -605,7 +741,7 @@ namespace Presentation
                 }
             }
 
-            
+
 
         }
 
@@ -617,14 +753,15 @@ namespace Presentation
         private void handlerLightSheets_Click(object sender, EventArgs e)
         {
             KryptonButton repBtnLightSheet = sender as KryptonButton;
-            string IdBtnLightSheet = repBtnLightSheet.Text;
+            string IdBtnLightSheet = repBtnLightSheet.Values.ExtraText;
 
-            if (IdBtnLightSheet == "LightSheet 1")
+            if (IdBtnLightSheet == "1")
             {
                 if (FormLightSheet_1 == null)
                 {
-                    FormLightSheet_1 = new FormLightSheets(IdBtnLightSheet);
+                    FormLightSheet_1 = new FormLightSheets("LightSheet " + IdBtnLightSheet);
                     openChildForm(FormLightSheet_1, sender);
+                    AddBtnNext("LightSheet", IdBtnLightSheet, "1");
                 }
                 else
                 {
@@ -632,12 +769,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnLightSheet == "LightSheet 2")
+            if (IdBtnLightSheet == "2")
             {
                 if (FormLightSheet_2 == null)
                 {
-                    FormLightSheet_2 = new FormLightSheets(IdBtnLightSheet);
+                    FormLightSheet_2 = new FormLightSheets("LightSheet " + IdBtnLightSheet);
                     openChildForm(FormLightSheet_2, sender);
+                    AddBtnNext("LightSheet", IdBtnLightSheet, "2");
                 }
                 else
                 {
@@ -645,12 +783,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnLightSheet == "LightSheet 3")
+            if (IdBtnLightSheet == "3")
             {
                 if (FormLightSheet_3 == null)
                 {
-                    FormLightSheet_3 = new FormLightSheets(IdBtnLightSheet);
+                    FormLightSheet_3 = new FormLightSheets("LightSheet " + IdBtnLightSheet);
                     openChildForm(FormLightSheet_3, sender);
+                    AddBtnNext("LightSheet", IdBtnLightSheet, "3");
                 }
                 else
                 {
@@ -658,12 +797,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnLightSheet == "LightSheet 4")
+            if (IdBtnLightSheet == "4")
             {
                 if (FormLightSheet_4 == null)
                 {
-                    FormLightSheet_4 = new FormLightSheets(IdBtnLightSheet);
+                    FormLightSheet_4 = new FormLightSheets("LightSheet " + IdBtnLightSheet);
                     openChildForm(FormLightSheet_4, sender);
+                    AddBtnNext("LightSheet", IdBtnLightSheet, "4");
                 }
                 else
                 {
@@ -680,14 +820,15 @@ namespace Presentation
         private void handlerLasers_Click(object sender, EventArgs e)
         {
             KryptonButton repBtnLaser = sender as KryptonButton;
-            string IdBtnLaser = repBtnLaser.Text;
+            string IdBtnLaser = repBtnLaser.Values.ExtraText;
 
-            if (IdBtnLaser == "Laser 1")
+            if (IdBtnLaser == "1")
             {
                 if (FormLaser_1 == null)
                 {
-                    FormLaser_1 = new FormLightSheets(IdBtnLaser);
+                    FormLaser_1 = new FormLasers("Laser " + IdBtnLaser);
                     openChildForm(FormLaser_1, sender);
+                    AddBtnNext("Laser", IdBtnLaser, "1");
                 }
                 else
                 {
@@ -695,12 +836,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnLaser == "Laser 2")
+            if (IdBtnLaser == "2")
             {
                 if (FormLaser_2 == null)
                 {
-                    FormLaser_2 = new FormLightSheets(IdBtnLaser);
+                    FormLaser_2 = new FormLasers("Laser " + IdBtnLaser);
                     openChildForm(FormLaser_2, sender);
+                    AddBtnNext("Laser", IdBtnLaser, "2");
                 }
                 else
                 {
@@ -708,12 +850,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnLaser == "Laser 3")
+            if (IdBtnLaser == "3")
             {
                 if (FormLaser_3 == null)
                 {
-                    FormLaser_3 = new FormLightSheets(IdBtnLaser);
+                    FormLaser_3 = new FormLasers("Laser " + IdBtnLaser);
                     openChildForm(FormLaser_3, sender);
+                    AddBtnNext("Laser", IdBtnLaser, "3");
                 }
                 else
                 {
@@ -721,12 +864,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnLaser == "Laser 4")
+            if (IdBtnLaser == "4")
             {
                 if (FormLaser_4 == null)
                 {
-                    FormLaser_4 = new FormLightSheets(IdBtnLaser);
+                    FormLaser_4 = new FormLasers("Laser " + IdBtnLaser);
                     openChildForm(FormLaser_4, sender);
+                    AddBtnNext("Laser", IdBtnLaser, "4");
                 }
                 else
                 {
@@ -743,14 +887,15 @@ namespace Presentation
         private void handlerFilterWheels_Click(object sender, EventArgs e)
         {
             KryptonButton repBtnFilterWheel = sender as KryptonButton;
-            string IdBtnFilterWheel = repBtnFilterWheel.Text;
+            string IdBtnFilterWheel = repBtnFilterWheel.Values.ExtraText;
 
-            if (IdBtnFilterWheel == "FilterWheel 1")
+            if (IdBtnFilterWheel == "1")
             {
                 if (FormFilterWheel_1 == null)
                 {
-                    FormFilterWheel_1 = new FormFilterWheels(IdBtnFilterWheel);
+                    FormFilterWheel_1 = new FormFilterWheels("FilterWheel " + IdBtnFilterWheel);
                     openChildForm(FormFilterWheel_1, sender);
+                    AddBtnNext("FilterWheel", IdBtnFilterWheel, "1");
                 }
                 else
                 {
@@ -758,12 +903,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnFilterWheel == "FilterWheel 2")
+            if (IdBtnFilterWheel == "2")
             {
                 if (FormFilterWheel_2 == null)
                 {
-                    FormFilterWheel_2 = new FormFilterWheels(IdBtnFilterWheel);
+                    FormFilterWheel_2 = new FormFilterWheels("FilterWheel " + IdBtnFilterWheel);
                     openChildForm(FormFilterWheel_2, sender);
+                    AddBtnNext("FilterWheel", IdBtnFilterWheel, "2");
                 }
                 else
                 {
@@ -771,12 +917,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnFilterWheel == "FilterWheel 3")
+            if (IdBtnFilterWheel == "3")
             {
                 if (FormFilterWheel_3 == null)
                 {
-                    FormFilterWheel_3 = new FormFilterWheels(IdBtnFilterWheel);
+                    FormFilterWheel_3 = new FormFilterWheels("FilterWheel " + IdBtnFilterWheel);
                     openChildForm(FormFilterWheel_3, sender);
+                    AddBtnNext("FilterWheel", IdBtnFilterWheel, "3");
                 }
                 else
                 {
@@ -784,12 +931,13 @@ namespace Presentation
                 }
             }
 
-            if (IdBtnFilterWheel == "FilterWheel 4")
+            if (IdBtnFilterWheel == "4")
             {
                 if (FormFilterWheel_4 == null)
                 {
-                    FormFilterWheel_4 = new FormFilterWheels(IdBtnFilterWheel);
+                    FormFilterWheel_4 = new FormFilterWheels("FilterWheel " + IdBtnFilterWheel);
                     openChildForm(FormFilterWheel_4, sender);
+                    AddBtnNext("FilterWheel", IdBtnFilterWheel, "4");
                 }
                 else
                 {
@@ -811,7 +959,7 @@ namespace Presentation
             LabelTitleSubmenu.Name = "Btn_" + numBtnSubMenu + "_" + numBtnSubMenu;
             LabelTitleSubmenu.Text = Lbl_TitleSubMenu;
             LabelTitleSubmenu.StateNormal.ShortText.Font = font;
-            LabelTitleSubmenu.Palette = krypton;            
+            LabelTitleSubmenu.Palette = krypton;
             LabelTitleSubmenu.StateNormal.ShortText.Color1 = Color.White;
             LabelTitleSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
 
@@ -819,43 +967,54 @@ namespace Presentation
 
         }
 
+        private void numSubBttons(KryptonPanel PanelSubMenu, string Item, int num)
+        {
+            for (int i = num + 1; i >= 1; i--)
+            {
+                AddBtnSubmenu(PanelSubMenu, Item, i.ToString());
+            }
+
+            AddTab(PanelSubMenu, Item);
+        }
+
+
         #region Handlers Items SubMenu
 
-        private Form FormObjectiveAxis_1 = null;
         private void handlerObjectiveAxis_Click(object sender, EventArgs e)
         {
-            
+
             KryptonButton repBtnObjectiveAxis = sender as KryptonButton;
             string IdBtnObjectiveAxis = repBtnObjectiveAxis.Tag.ToString();
+            int numBtns = DatosSubMenu.ObjectiveAxis;
 
             if (DatosSubMenu.ObjectiveAxis > 0)
             {
-                if(IdBtnObjectiveAxis=="1")
+                if (IdBtnObjectiveAxis == "1")
                 {
                     this.subMenu_ObjectiveLens_1.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", "1");
-                    AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    numSubBttons(subMenu_ObjectiveLens_1, "ObjectiveAxis", numBtns);                    
+                    //AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
                 if (IdBtnObjectiveAxis == "2")
                 {
                     this.subMenu_ObjectiveLens_2.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", "1");
-                    AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    numSubBttons(subMenu_ObjectiveLens_2, "ObjectiveAxis", numBtns);
+                    //AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
                 if (IdBtnObjectiveAxis == "3")
                 {
                     this.subMenu_ObjectiveLens_3.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", "1");
-                    AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    numSubBttons(subMenu_ObjectiveLens_3, "ObjectiveAxis", numBtns);
+                    //AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
                 if (IdBtnObjectiveAxis == "4")
                 {
                     this.subMenu_ObjectiveLens_1.Controls.Clear();
-                    AddBtnSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", "1");
-                    AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+                    numSubBttons(subMenu_ObjectiveLens_4, "ObjectiveAxis", numBtns);
+                    //AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
                 }
 
 
@@ -866,6 +1025,128 @@ namespace Presentation
             }
         }
 
+
+        private void handlerLightSheet_Click(object sender, EventArgs e)
+        {
+
+            KryptonButton repBtnLightSheets = sender as KryptonButton;
+            string IdBtnLightSheet = repBtnLightSheets.Tag.ToString();
+            int numBtns = DatosSubMenu.LightSheets;
+
+
+            if (IdBtnLightSheet == "1")
+            {
+                this.subMenu_LightSheet_1.Controls.Clear();
+                numSubBttons(subMenu_LightSheet_1, "LightsheetAxes", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnLightSheet == "2")
+            {
+                this.subMenu_LightSheet_2.Controls.Clear();
+                numSubBttons(subMenu_LightSheet_2, "LightsheetAxes", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnLightSheet == "3")
+            {
+                this.subMenu_LightSheet_3.Controls.Clear();
+                numSubBttons(subMenu_LightSheet_3, "LightsheetAxes", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnLightSheet == "4")
+            {
+                this.subMenu_LightSheet_4.Controls.Clear();
+                numSubBttons(subMenu_LightSheet_4, "LightsheetAxes", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+
+
+        }
+
+        private void handlerLaser_Click(object sender, EventArgs e)
+        {
+
+            KryptonButton repBtnLaser = sender as KryptonButton;
+            string IdBtnLaser = repBtnLaser.Tag.ToString();
+            int numBtns = DatosSubMenu.Laser;
+
+
+            if (IdBtnLaser == "1")
+            {
+                this.subMenu_Laser_1.Controls.Clear();
+                numSubBttons(subMenu_Laser_1, "Laser", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnLaser == "2")
+            {
+                this.subMenu_Laser_2.Controls.Clear();
+                numSubBttons(subMenu_Laser_2, "Laser", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnLaser == "3")
+            {
+                this.subMenu_Laser_3.Controls.Clear();
+                numSubBttons(subMenu_Laser_3, "Laser", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnLaser == "4")
+            {
+                this.subMenu_Laser_4.Controls.Clear();
+                numSubBttons(subMenu_Laser_4, "Laser", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+
+
+        }
+
+        private void handlerFilterWheel_Click(object sender, EventArgs e)
+        {
+
+            KryptonButton repBtnFilterWheel = sender as KryptonButton;
+            string IdBtnFilterWheel = repBtnFilterWheel.Tag.ToString();
+            int numBtns = DatosSubMenu.Laser;
+
+
+            if (IdBtnFilterWheel == "1")
+            {
+                this.subMenu_FilterWheel_1.Controls.Clear();
+                numSubBttons(subMenu_FilterWheel_1, "FilterWheel", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_1, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnFilterWheel == "2")
+            {
+                this.subMenu_FilterWheel_2.Controls.Clear();
+                numSubBttons(subMenu_FilterWheel_2, "FilterWheel", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_2, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnFilterWheel == "3")
+            {
+                this.subMenu_FilterWheel_3.Controls.Clear();
+                numSubBttons(subMenu_FilterWheel_3, "FilterWheel", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_3, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+            if (IdBtnFilterWheel == "4")
+            {
+                this.subMenu_FilterWheel_4.Controls.Clear();
+                numSubBttons(subMenu_FilterWheel_4, "FilterWheel", numBtns);
+                //AddTitleSubmenu(subMenu_ObjectiveLens_4, "ObjectiveAxis", IdBtnObjectiveAxis);
+            }
+
+
+
+        }
+
+
         #endregion
 
         #region Handlers SubMenus
@@ -873,12 +1154,12 @@ namespace Presentation
         Form newObjectiveAxis = null;
         private void handlerSubMenuObjectiveAxis_Click(object sender, EventArgs e)
         {
-            
+
             KryptonButton repBtnSubMenuObjectiveAxis = sender as KryptonButton;
             string IdBtnSubMenuObjectiveAxis = repBtnSubMenuObjectiveAxis.Text;
 
             newObjectiveAxis = new FormObjectiveAxis(IdBtnSubMenuObjectiveAxis);
-            openChildForm(newObjectiveAxis, sender);           
+            openChildForm(newObjectiveAxis, sender);
 
         }
 

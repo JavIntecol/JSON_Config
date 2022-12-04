@@ -16,6 +16,25 @@ namespace Presentation.Views
         {
             InitializeComponent();
             Lbl_TitleLightSheets.Text = title;
+
+            for(int i = 1; i <= 100; i++)
+            {
+                CmbBx_LightSheetsLightsheetAxes.Items.Add(i);
+                
+            }
+        }
+
+        private void FormLightSheets_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public int indiceLightSheet;
+        private void CmbBx_LightSheetsLightsheetAxes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            indiceLightSheet = CmbBx_LightSheetsLightsheetAxes.SelectedIndex;
+
+            DatosSubMenu.LightSheets = indiceLightSheet;
         }
     }
 }

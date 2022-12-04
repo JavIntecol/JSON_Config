@@ -18,9 +18,12 @@ namespace Presentation.Views
             InitializeComponent();
             Lbl_TitleStageAxes.Text = title;
 
-            CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(0);
-            CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(1);
-           
+            for (int i = 0; i <= 100; i++)
+            {
+                CmbBx_ObjectiveAxisObjectiveLenses.Items.Add(i);
+
+            }
+
         }
        
         public int indiceObjectiveAxis;
